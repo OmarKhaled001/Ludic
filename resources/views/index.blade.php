@@ -4,7 +4,6 @@
         <!-- Metas -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="keywords" content="{{$page->keywords}}">
         <meta name="description" content="{{$page->description}}">
         <meta name="author" content="ludic">
@@ -14,7 +13,7 @@
 </head>
 <body>
     @include('main.loader')
-    <div class="container-fluid" >
+    <div class="smooth-scroll-content" id="scrollsmoother-container">
         @include('main.nav')
         @include('section.home.slider')
         <main>
