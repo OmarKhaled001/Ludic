@@ -15,7 +15,7 @@
                         From the beginning, our goal has extended beyond sales and profits. We are committed to ongoing development driven by specialized research, allowing us to offer the highest quality products, competitive pricing, and reliable, timely supply. ludic's dedication to cultural responsibility continues to evolve, as we share our expertise by providing technical information, training, and supporting clients in growing their businesses both vertically and horizontally.
 
                     </div>
-                    <a href="#" class="butn rounded-pill mt-50 hover-bg-black bg-white">
+                    <a href="{{route('about')}}" class="butn rounded-pill mt-50 hover-bg-black bg-white">
                         <span> About US <i class="small ms-1 ti-arrow-top-right"></i> </span>
                     </a>
                 </div>

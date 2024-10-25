@@ -50,4 +50,11 @@ class PageController extends Controller
 
         return redirect()->route('index');
     }
+    public function service($slug) 
+    {
+        // get all services
+        $service = Service::with('products')->where('slug',$slug)->get()->first();
+        // get all pages
+        return view('service',compact('service'));
+    }
 }

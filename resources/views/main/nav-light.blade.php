@@ -26,7 +26,7 @@
                         <ul class="dropdown-menu">
                             @foreach ($services as $service)
                                 
-                            <li><a class="dropdown-item" href="../innerpages/blog.html"> {{$service->name}}</a></li>
+                            <li><a class="dropdown-item" href="{{route('service',$service->slug)}}"> {{$service->name}}</a></li>
                             @endforeach
                         </ul>
                     </li>

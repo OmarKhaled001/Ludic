@@ -18,7 +18,7 @@
                                     <div class="text fsz-17 fw-300 lh-4">
                                         {{ Str::limit($service->details, 99) }}
                                     </div>
-                                    <a href="#" class="butn border rounded-pill mt-60 hover-bg-white">
+                                    <a href="{{route('service',$service->slug)}}" class="butn border rounded-pill mt-60 hover-bg-white">
                                         <span> View <i class="small ms-1 ti-arrow-top-right"></i> </span>
                                     </a>
                                 </div>
