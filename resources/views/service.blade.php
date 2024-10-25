@@ -14,7 +14,7 @@
 </head>
 <body>
     @include('main.loader')
-    <div class="smooth-scroll-content" id="scrollsmoother-container">
+    <div class="inner-pages-style1 smooth-scroll-content" id="scrollsmoother-container">
         @include('main.nav')
         @include('section.service.header')
         <main>
