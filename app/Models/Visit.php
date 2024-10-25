@@ -10,6 +10,5 @@ class Visit extends Model
     use HasFactory;
 
     protected $table   = 'visits';
-
     protected $fillable = ['ip_address'];
 }
