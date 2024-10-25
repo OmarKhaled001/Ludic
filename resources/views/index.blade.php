@@ -14,7 +14,7 @@
 </head>
 <body>
     @include('main.loader')
-    <div class="smooth-scroll-content" id="scrollsmoother-container">
+    <div class="container-fluid" >
         @include('main.nav')
         @include('section.home.slider')
         <main>
