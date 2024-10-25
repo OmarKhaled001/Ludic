@@ -10,4 +10,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Setting extends Model implements HasMedia
 {
     use HasFactory ,InteractsWithMedia;
+
+    protected $table   = 'settings';
+    protected $fillable = [
+        'email',
+        'phone',
+        'facebook',
+        'instagram',
+        'twitter',
+        'linkedin',
+        'products_count',
+        'suppliers_count',
+        'cagr_count',
+        'timezone',
+    ];
 }
