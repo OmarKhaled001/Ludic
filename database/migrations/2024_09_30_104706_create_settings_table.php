@@ -13,10 +13,17 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('email')->unique()->nullable();
-            
-
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('facebook ');
+            $table->string('instagram ');
+            $table->string('twitter');
+            $table->string('linkedin');
+            $table->string('products_count');
+            $table->string('suppliers_count');
+            $table->string('cagr_count');
+            $table->string('timezone');
             $table->timestamps();
         });
     }
