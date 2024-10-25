@@ -7,8 +7,8 @@
                 <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                     <div class="row mixitup" id="MixItUp921277"><div class="col-lg-4 mix-item Architecture Landscape">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case4.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case4.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case4.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case4.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -23,8 +23,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Interior">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case5.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case5.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case5.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case5.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -39,8 +39,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Landscape">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case6.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case6.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case6.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case6.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -55,8 +55,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Furniture">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case7.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case7.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case7.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case7.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -72,8 +72,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Interior Furniture">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case8.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case8.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case8.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case8.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -89,8 +89,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Landscape">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case9.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case9.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case9.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case9.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -105,8 +105,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Landscape">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case10.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case10.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case10.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case10.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -121,8 +121,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Furniture">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case11.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case11.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case11.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case11.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
@@ -137,8 +137,8 @@
                             </div>
                         </div> <div class="col-lg-4 mix-item Architecture Furniture">
                             <div class="case-card">
-                                <a href="assets/img/portfolio/case12.jpg" class="img" data-fancybox="cases">
-                                    <img src="assets/img/portfolio/case12.jpg" alt="" class="img-cover">
+                                <a href="{{asset('assets')}}/img/portfolio/case12.jpg" class="img" data-fancybox="cases">
+                                    <img src="{{asset('assets')}}/img/portfolio/case12.jpg" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
                                     <div class="tags mb-30">
