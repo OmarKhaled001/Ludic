@@ -17,7 +17,7 @@ class BranchResource extends Resource
 {
     protected static ?string $model = Branch::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
 
     public static function form(Form $form): Form
     {
@@ -38,6 +38,12 @@ class BranchResource extends Resource
             Forms\Components\Select::make('country_id')
                 ->relationship('country', 'name')
                 ->required()
+                ->createOptionForm([
+                        Forms\Components\TextInput::make('name')
+                        ->required()
+                        ->label('Country Name') 
+                ]
+                )
                 ->label('Country'),
             ]);
     }
