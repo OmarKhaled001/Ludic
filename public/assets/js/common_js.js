@@ -91,9 +91,10 @@ $(function () {
         }
     });
 });
-
-// Preloader animation with GSAP
 $(function () {
+    var wind = $(window);
+
+    // Preloader animation with GSAP
     const svg = document.getElementById("svg");
     const tl = gsap.timeline();
     const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
@@ -128,31 +129,34 @@ $(function () {
         opacity: 0,
         delay: 0.3
     }, "-=1.5");
-});
 
-// Preloader end on window load
-$(window).on("load", function () {
-    var body = $('body');
-    body.addClass('loaded');
-    setTimeout(function () {
-        body.removeClass('loaded');
-    }, 1500);
-});
+    // Preloader end on window load
+    $(window).on("load", function () {
+        var body = $('body');
+        body.addClass('loaded');
+        setTimeout(function () {
+            body.removeClass('loaded');
+        }, 1500);
+    });
 
-// Media queries and responsiveness
-$(function () {
-    // Adjust font sizes and paddings based on screen size
+    // Adjust font sizes and paddings based on screen size for responsiveness
     function adjustForDevice() {
-        if (wind.width() < 768) {
-            // Mobile devices
-            $('h1, h2, h3, p').css('font-size', '14px');
+        if (wind.width() < 576) {
+            // Extra small devices (phones)
+            $('h1, h2, h3, p').css('font-size', '12px');
             $('.bg-img').css('background-size', 'cover');
-        } else if (wind.width() >= 768 && wind.width() <= 991) {
-            // Tablet devices
+        } else if (wind.width() >= 576 && wind.width() < 768) {
+            // Small devices (phones in landscape)
+            $('h1, h2, h3, p').css('font-size', '14px');
+        } else if (wind.width() >= 768 && wind.width() < 992) {
+            // Medium devices (tablets)
             $('h1, h2, h3, p').css('font-size', '16px');
-        } else {
-            // Larger screens
+        } else if (wind.width() >= 992 && wind.width() < 1200) {
+            // Large devices (desktops)
             $('h1, h2, h3, p').css('font-size', '18px');
+        } else {
+            // Extra large devices (large desktops)
+            $('h1, h2, h3, p').css('font-size', '20px');
         }
     }
 
