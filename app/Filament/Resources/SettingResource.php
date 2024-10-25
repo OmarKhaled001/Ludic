@@ -83,6 +83,7 @@ class SettingResource extends Resource
 
             // Timezone field
             TimezoneSelect::make('timezone')
+                ->searchable()
                 ->label('Timezone')
                 ->required(),
             ]);
