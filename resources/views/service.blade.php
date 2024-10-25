@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="keywords" content="{{$page->keywords}}">
-        <meta name="description" content="{{$page->description}}">
+        <meta name="keywords" content="{{$service->keywords}}">
+        <meta name="description" content="{{$service->description}}">
         <meta name="author" content="ludic">
         <!-- Title  -->
-        <title>Ludic - {{$page->name}}</title>
+        <title>Ludic - {{$service->name}}</title>
         @include('main.meta')
 </head>
 <body>
