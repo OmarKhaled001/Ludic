@@ -141,7 +141,7 @@ $(function () {
 
     // Adjust font sizes and paddings based on screen size for responsiveness
     function adjustForDevice() {
-        if (wind.width() < 576) {
+        if (wind.width() < 300) {
             // Extra small devices (phones)
             $('h1, h2, h3, p').css('font-size', '12px');
             $('.bg-img').css('background-size', 'cover');
