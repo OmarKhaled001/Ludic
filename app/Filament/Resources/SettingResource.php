@@ -27,9 +27,9 @@ class SettingResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                ->label('Name')
-                ->required(),
+            TextInput::make('name')
+            ->label('Name')
+            ->required(),
 
             // Email field
             TextInput::make('email')
