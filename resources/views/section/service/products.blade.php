@@ -13,7 +13,7 @@
                                     <img src="{{$product->getMedia('products')->first()->getUrl()}}" alt="" class="img-cover">
                                 </a>
                                 <div class="info">
-                                    <h3 class="title fsz-35 mb-20"> <a href="" class="hover-orange1"> Polo
+                                    <h3 class="title fsz-35 mb-20"> <a href="" class="hover-orange1">
                                             {{$product->name}} </a> </h3>
                                     <div class="text color-666">  {{$product->details}} </div>
                                 </div>
