@@ -7,7 +7,7 @@
                 <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                     <div class="row mixitup" id="MixItUp921277">
                         @foreach ($service->products as $product)
-                        <div class="col-lg-4 mix-item Architecture Furniture">
+                        <div class="col-lg-4 mix-item ">
                             <div class="case-card">
                                 <a href="" class="img" data-fancybox="cases">
                                     <img src="{{$product->getMedia('products')->first()->getUrl()}}" alt="" class="img-cover">
