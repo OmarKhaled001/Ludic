@@ -13,6 +13,7 @@ class Setting extends Model implements HasMedia
 
     protected $table   = 'settings';
     protected $fillable = [
+        'name',
         'email',
         'phone',
         'facebook',
