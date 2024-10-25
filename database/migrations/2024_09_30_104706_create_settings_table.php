@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('facebook ');
-            $table->string('instagram ');
+            $table->string('facebook');
+            $table->string('instagram');
             $table->string('twitter');
             $table->string('linkedin');
             $table->string('products_count');
