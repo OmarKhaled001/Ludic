@@ -119,6 +119,8 @@ class SettingResource extends Resource
     {
         return [
             'index' => Pages\EditSetting::route('/1/edit'),
+            'create' => Pages\CreateSetting::route('/create'),
+            'edit' => Pages\EditSetting::route('/{record}/edit'),
         ];
     }
 }
