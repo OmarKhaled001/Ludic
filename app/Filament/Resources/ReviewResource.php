@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\ReviewResource\Pages;
@@ -28,7 +29,7 @@ class ReviewResource extends Resource
             ->schema([
                 TextInput::make('author')->required(),
                 TextInput::make('position')->required(),
-                Textarea::make('position')->required(),
+                Textarea::make('review')->required(),
                 SpatieMediaLibraryFileUpload::make('author')->collection('authors')->label('Profile')->maxSize(10240),
             ]);
     }
@@ -37,7 +38,9 @@ class ReviewResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('author'),
+                TextColumn::make('position'),
+
             ])
             ->filters([
                 //
