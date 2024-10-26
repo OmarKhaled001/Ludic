@@ -118,7 +118,7 @@ class SettingResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\EditSetting::route('/1/edit'),
+            'index' => Pages\ListSettings::route('/{record}/edit'),
             'create' => Pages\CreateSetting::route('/create'),
             'edit' => Pages\EditSetting::route('/{record}/edit'),
         ];
