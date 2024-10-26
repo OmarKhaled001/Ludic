@@ -33,7 +33,6 @@ class BranchResource extends Resource
                 ->required()
                 ->label('Branch Address'),
                 Map::make('location')
-                ->setZoom(12)
                 ->required()
                 ->geocodeField('address') 
                 ->longitude('longitude')  
