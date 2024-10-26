@@ -9,11 +9,12 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
+use Cheesegrits\FilamentGoogleMaps\Forms\Components\GoogleMaps;
+use Cheesegrits\FilamentGoogleMaps\Fields\Map;
+
 use App\Filament\Resources\BranchResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\BranchResource\RelationManagers;
-use Cheesegrits\FilamentGoogleMaps\Fields\Map;
-
 
 class BranchResource extends Resource
 {
