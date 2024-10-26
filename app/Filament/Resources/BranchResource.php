@@ -2,16 +2,17 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\BranchResource\Pages;
-use App\Filament\Resources\BranchResource\RelationManagers;
-use App\Models\Branch;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Branch;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
+use Geocoder\Provider\GoogleMaps\GoogleMaps;
+use App\Filament\Resources\BranchResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\BranchResource\RelationManagers;
 
 class BranchResource extends Resource
 {
@@ -29,12 +30,13 @@ class BranchResource extends Resource
             Forms\Components\TextInput::make('address')
                 ->required()
                 ->label('Branch Address'),
-            Forms\Components\TextInput::make('latitude')
+                GoogleMaps::make('location')
+                ->setCenter([30.033333, 31.233334]) 
+                ->setZoom(12)
                 ->required()
-                ->label('Latitude'),
-            Forms\Components\TextInput::make('longitude')
-                ->required()
-                ->label('Longitude'),
+                ->geocodeField('address') 
+                ->longitude('longitude')  
+                ->latitude('latitude'),  
             Forms\Components\Select::make('country_id')
                 ->relationship('country', 'name')
                 ->required()
