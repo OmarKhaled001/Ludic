@@ -33,10 +33,19 @@ class BranchResource extends Resource
                 ->required()
                 ->label('Branch Address'),
                 Map::make('location')
-                ->required()
-                ->geocodeField('address') 
-                ->longitude('longitude')  
-                ->latitude('latitude'),  
+                ->mapControls([
+                    'mapTypeControl'    => true,
+                    'scaleControl'      => true,
+                    'streetViewControl' => true,
+                    'rotateControl'     => true,
+                    'fullscreenControl' => true,
+                    'searchBoxControl'  => false, // creates geocomplete field inside map
+                    'zoomControl'       => false,
+                ])
+                ->height(fn () => '400px') // map height (width is controlled by Filament options)
+                ->defaultZoom(5) // default zoom level when opening form
+                ->autocomplete('full_address') // field on form to use as Places geocompletion field
+                ->autocompleteReverse(true) ,  
             Forms\Components\Select::make('country_id')
                 ->relationship('country', 'name')
                 ->required()
