@@ -1,4 +1,4 @@
-<header class="smooth-scroll-content" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+<header class="col-10">
     <div class="container" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
         <div class="info">
             <h1 class="title"> {{$service->name}} </h1>
