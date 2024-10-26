@@ -9,13 +9,11 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
-use Cheesegrits\FilamentGoogleMaps\Fields\Map;
 use App\Filament\Resources\BranchResource\Pages;
-
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Cheesegrits\FilamentGoogleMaps\Fields\Geocomplete;
 use App\Filament\Resources\BranchResource\RelationManagers;
-use Cheesegrits\FilamentGoogleMaps\Forms\Components\GoogleMaps;
+use Cheesegrits\FilamentGoogleMaps\Fields\Map;
+
 
 class BranchResource extends Resource
 {
@@ -33,7 +31,7 @@ class BranchResource extends Resource
             Forms\Components\TextInput::make('address')
                 ->required()
                 ->label('Branch Address'),
-                Geocomplete::make('location')
+                Map::make('location')
                 ->setCenter([30.033333, 31.233334]) 
                 ->setZoom(12)
                 ->required()
