@@ -9,7 +9,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Builder;
-use Geocoder\Provider\GoogleMaps\GoogleMaps;
+use Cheesegrits\FilamentGoogleMaps\Forms\Components\GoogleMaps;
 use App\Filament\Resources\BranchResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\BranchResource\RelationManagers;
