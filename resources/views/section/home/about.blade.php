@@ -31,19 +31,19 @@
             <div class="row justify-content-around align-items-center">
                 <div class="col-lg-3">
                     <div class="number-card wow fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="perc">+100 </h3>
+                        <h3 class="perc">+{{$setting->products_count}} </h3>
                         <h3 class="fsz-45 fw-600">Products </h3>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="number-card wow fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="perc"> +50 </h3>
+                        <h3 class="perc"> +{{$setting->suppliers_count}} </h3>
                         <h3 class="fsz-45 fw-600"> Suppliers </h3>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="number-card wow fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="perc"> +24 </h3>
+                        <h3 class="perc"> +{{$setting->cagr_count}} </h3>
                         <h3 class="fsz-45 fw-600"> Cagr </h3>
                     </div>
                 </div>
