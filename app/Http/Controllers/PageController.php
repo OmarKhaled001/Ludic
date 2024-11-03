@@ -13,7 +13,6 @@ class PageController extends Controller
 {
     public function index(){
         // get all services
-        $services = Service::all();
         // get  page
         $page = Page::where('slug','home')->get()->first();
         // get contents
@@ -22,7 +21,6 @@ class PageController extends Controller
     }
     public function about(){
         // get all services
-        $services = Service::all();
         $branches = Branch::all();
         // get all pages
         $page = Page::where('slug','about-us')->get()->first();
@@ -31,7 +29,6 @@ class PageController extends Controller
     }
     public function contact(){
         // get all services
-        $services = Service::all();
         // get all pages
         $page = Page::where('slug','contact-us')->get()->first();
         return view('contact',compact('services','page'));
@@ -53,7 +50,6 @@ class PageController extends Controller
     public function service($slug) 
     {
         // get all services
-        $services = Service::all();
         $service = Service::with('products')->where('slug',$slug)->get()->first();
         // get all pages
         return view('service',compact('service','services'));
