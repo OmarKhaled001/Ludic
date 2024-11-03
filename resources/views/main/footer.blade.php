@@ -15,10 +15,10 @@
                 
                 <div class="col-lg-3 mt-1">
                     <div class="social-links">
-                        <a href="#"> <i class="fab fa-x-twitter"></i> </a>
-                        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                        <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                        <a href="{{$setting->twitter}}"> <i class="fab fa-x-twitter"></i> </a>
+                        <a href="{{$setting->facebook}}"> <i class="fab fa-facebook-f"></i> </a>
+                        <a href="{{$setting->instagram}}"> <i class="fab fa-instagram"></i> </a>
+                        <a href="{{$setting->linkedin}}"> <i class="fab fa-linkedin-in"></i> </a>
                     </div>
                 </div>
                 
