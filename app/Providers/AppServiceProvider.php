@@ -22,9 +22,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $services = Service::all();
 
-        view()->share([
+        view()->share(
             'services', $services,
 
-        ]);
+        );
     }
 }
