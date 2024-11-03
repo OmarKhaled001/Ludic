@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Models\Service;
 use Illuminate\Support\ServiceProvider;
+use App\Models\Service;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,9 +22,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $services = Service::all();
 
-        view()->share(
+        view()->share([
             'services', $services,
 
-        );
+        ]);
     }
 }
