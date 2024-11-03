@@ -52,6 +52,6 @@ class PageController extends Controller
         // get all services
         $service = Service::with('products')->where('slug',$slug)->get()->first();
         // get all pages
-        return view('service',compact('service','services'));
+        return view('service',compact('service'));
     }
 }
