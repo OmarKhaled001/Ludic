@@ -1797,6 +1797,6 @@
 
 /* end footer */
 
-body {
-  font-family: 'RocGrotesk', sans-serif;
+* {
+  font-family: 'RocGrotesk', sans-serif !important; 
 }
