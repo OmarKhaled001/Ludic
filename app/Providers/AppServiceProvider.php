@@ -21,8 +21,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        
         $services = Service::all();
         $setting =Setting::first();
+
         view()->share([
             'services' => $services,
             'setting' => $setting,
