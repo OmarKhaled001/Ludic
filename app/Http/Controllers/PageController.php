@@ -16,7 +16,7 @@ class PageController extends Controller
         // get  page
         $page = Page::where('slug','home')->get()->first();
         // get contents
-        return view('index',compact('services','page'));
+        return view('index',compact('page'));
 
     }
     public function about(){
@@ -24,14 +24,14 @@ class PageController extends Controller
         $branches = Branch::all();
         // get all pages
         $page = Page::where('slug','about-us')->get()->first();
-        return view('about',compact('services','page','branches'));
+        return view('about',compact('page','branches'));
 
     }
     public function contact(){
         // get all services
         // get all pages
         $page = Page::where('slug','contact-us')->get()->first();
-        return view('contact',compact('services','page'));
+        return view('contact',compact('page'));
 
     }
     public function contactForm(Request $request){
