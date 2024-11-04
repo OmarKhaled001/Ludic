@@ -50,7 +50,7 @@ class StatsOverview extends BaseWidget
             Stat::make('Unread messages', Contact::where('seen',0)->count())
             ->chart( $contactCounts)
             ->color('danger')
-            ->descriptionIcon('heroicon-m-arrow-trending-up'),
+            ->descriptionIcon('heroicon-m-arrow-trending-down'),
             Stat::make('Unique views', '192.1k')
             ->chart([7, 2, 10, 3, 15, 4, 17])
             ->color('success')
