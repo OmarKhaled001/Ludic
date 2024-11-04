@@ -26,6 +26,9 @@ class SiteVisitsWidget extends ChartWidget
                 ->default('30')
                 ->reactive() // Makes the selection reactive
                 ->label('Time Range')
+                ->afterStateUpdated(function ($state) {
+                    $this->timeRange = $state; // Update the timeRange with the selected value
+                }),
         ];
     }
 
