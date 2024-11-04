@@ -10,7 +10,7 @@ use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 class StatsOverview extends BaseWidget
 {
     public ?string $timeRange = '30'; // Default value: 30 days
-    
+
     protected function getStats(): array
     {
         $startDate = Carbon::now()->subDays($this->timeRange);
@@ -34,7 +34,7 @@ class StatsOverview extends BaseWidget
         }
 
         return [
-            Stat::make('Unique views',  Visit::count())
+            Stat::make('Unique views',  Visit::distinct('ip_address')->count('ip_address'))
             ->chart($visitCounts)
             ->color('success')
             ->descriptionIcon('heroicon-m-arrow-trending-up'),
