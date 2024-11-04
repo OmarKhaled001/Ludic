@@ -39,6 +39,9 @@ class ReviewResource extends Resource
     {
         return $table
             ->columns([
+                SpatieMediaLibraryImageColumn::make('author_profile')
+                ->collection('authors')
+                ->circular(),
                 TextColumn::make('author'),
                 TextColumn::make('position'),
 
