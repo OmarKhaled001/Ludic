@@ -19,6 +19,7 @@
         @include('section.home.slider')
         <main>
             @include('section.home.about')
+            @include('section.home.review')
             @include('section.home.clients')
             @include('section.home.products')
             @include('section.home.mail')
