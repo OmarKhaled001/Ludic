@@ -8,7 +8,7 @@
             <div class="col-lg-8">
                 <div class="tc-clients-style1">
                     <div
-                        class="clients-slider1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                        class="clients-slider1 swiper-initialized swiper-horizontal swiper-pointer-events ">
                         <div class="swiper-wrapper" id="swiper-wrapper-bbbe4e33852fc931" aria-live="off"
                             style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                             @foreach ($reviews as $review)
