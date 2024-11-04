@@ -48,9 +48,8 @@ class ClientResource extends Resource
         return $table
             ->columns([
                 SpatieMediaLibraryImageColumn::make('logo')
-                ->collection('logos')->square(),
+                ->collection('logos'),
                 TextColumn::make('name')->searchable(),
-                TextColumn::make('email')->searchable(),
             ])
             ->filters([
                 //
