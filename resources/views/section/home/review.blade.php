@@ -17,19 +17,19 @@
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “The entire team tactfully delivered a </div>
+                                            “Ludic’s products have been a </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            project of exceptional quality while </div>
+                                            game-changer for my business! </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            staying on schedule and under </div>
+                                            The quality is unbeatable, and their commitment </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            budget. More than what i'm </div>
+                                            to ongoing research really shines through. </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expected. I’m really satisfied and </div>
+                                            Beyond just delivering products, </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
                                             recommended!.” </div>
@@ -53,19 +53,19 @@
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “The entire team tactfully delivered a </div>
+                                            “Ludic’s products have been a </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            project of exceptional quality while </div>
+                                            game-changer for my business! </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            staying on schedule and under </div>
+                                            The quality is unbeatable, and their commitment </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            budget. More than what i'm </div>
+                                            to ongoing research really shines through. </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expected. I’m really satisfied and </div>
+                                            Beyond just delivering products, </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
                                             recommended!.” </div>
@@ -86,23 +86,22 @@
                             <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 3"
                                 style="width: 817px;">
                                 <div class="clients-card">
-                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines"
-                                        style="perspective: 400px;">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “The entire team tactfully delivered a </div>
+                                            “Ludic’s products have been a </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            project of exceptional quality while </div>
+                                            game-changer for my business! </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            staying on schedule and under </div>
+                                            The quality is unbeatable, and their commitment </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            budget. More than what i'm </div>
+                                            to ongoing research really shines through. </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expected. I’m really satisfied and </div>
+                                            Beyond just delivering products, </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
                                             recommended!.” </div>
@@ -113,9 +112,8 @@
                                                 class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
-                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
-                                                Investor </p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">Sandra Lim</h6>
+                                            <p class="text-capitalize fsz-14 color-666">Product Specialist</p>
                                         </div>
                                     </div>
                                 </div>
@@ -123,23 +121,22 @@
                             <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="2"
                                 role="group" aria-label="3 / 3" style="width: 817px;">
                                 <div class="clients-card">
-                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines"
-                                        style="perspective: 400px;">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “The entire team tactfully delivered a </div>
+                                            “Ludic’s products have been a </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            project of exceptional quality while </div>
+                                            game-changer for my business! </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            staying on schedule and under </div>
+                                            The quality is unbeatable, and their commitment </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            budget. More than what i'm </div>
+                                            to ongoing research really shines through. </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expected. I’m really satisfied and </div>
+                                            Beyond just delivering products, </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
                                             recommended!.” </div>
@@ -150,9 +147,8 @@
                                                 class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
-                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
-                                                Investor </p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">Raj Patel</h6>
+                                            <p class="text-capitalize fsz-14 color-666">Operations Manager</p>
                                         </div>
                                     </div>
                                 </div>
@@ -164,19 +160,19 @@
                                         style="perspective: 400px;">
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “The entire team tactfully delivered a </div>
+                                            “Ludic’s products have been a </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            project of exceptional quality while </div>
+                                            game-changer for my business! </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            staying on schedule and under </div>
+                                            The quality is unbeatable, and their commitment </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            budget. More than what i'm </div>
+                                            to ongoing research really shines through. </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expected. I’m really satisfied and </div>
+                                            Beyond just delivering products, </div>
                                         <div
                                             style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
                                             recommended!.” </div>
@@ -187,9 +183,8 @@
                                                 class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
-                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
-                                                Investor </p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> Emily Watson </h6>
+                                            <p class="text-capitalize fsz-14 color-666">Business Owner </p>
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +195,8 @@
                                 aria-label="Previous slide" aria-controls="swiper-wrapper-bbbe4e33852fc931"></div>
                             <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal">
                                 <span class="swiper-pagination-current">3</span> / <span
-                                    class="swiper-pagination-total">3</span></div>
+                                    class="swiper-pagination-total">3</span>
+                            </div>
                             <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
                                 aria-controls="swiper-wrapper-bbbe4e33852fc931"></div>
                         </div>
