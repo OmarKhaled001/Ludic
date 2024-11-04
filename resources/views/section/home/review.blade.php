@@ -12,7 +12,7 @@
                         <div class="swiper-wrapper" id="swiper-wrapper-bbbe4e33852fc931" aria-live="off"
                             style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                             @foreach ($reviews as $review)
-                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                                <div class="swiper-slide swiper-slide-duplicate "
                                     data-swiper-slide-index="2" role="group"  style="width: 817px;">
                                     <div class="clients-card">
                                         <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
