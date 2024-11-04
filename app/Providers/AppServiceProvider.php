@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         
-        $services = Service::where('active', 1)->get();
+        $services = Service::where('is_active', 1)->get();
         $setting =Setting::first();
 
         view()->share([
