@@ -8,32 +8,202 @@
             <div class="col-lg-8">
                 <div class="tc-clients-style1">
                     <div
-                        class="clients-slider1 swiper-initialized swiper-horizontal swiper-pointer-events ">
+                        class="clients-slider1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
                         <div class="swiper-wrapper" id="swiper-wrapper-bbbe4e33852fc931" aria-live="off"
                             style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                            @foreach ($reviews as $review)
-                                <div class="swiper-slide swiper-slide-duplicate "
-                                    data-swiper-slide-index="2" role="group"  style="width: 817px;">
-                                    <div class="clients-card">
-                                        <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        "{{$review->review}}"
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                                data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 817px;">
+                                <div class="clients-card">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            “The entire team tactfully delivered a </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            project of exceptional quality while </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            staying on schedule and under </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            budget. More than what i'm </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            expected. I’m really satisfied and </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            recommended!.” </div>
+                                    </div>
+                                    <div class="author">
+                                        <div class="au-img">
+                                            <img src="{{ asset('assets') }}/img/team/team1.jpg" alt=""
+                                                class="img-cover">
                                         </div>
-                                        <div class="author">
-                                            <div class="au-img">
-                                                <img src="{{$review->getMedia('authors')->first()->getUrl()}}" alt=""
-                                                    class="img-cover">
-                                            </div>
-                                            <div class="au-inf">
-                                                <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{$review->author}}</h6>
-                                                <p class="text-capitalize fsz-14 color-666">{{$review->posetion}}</p>
-                                            </div>
+                                        <div class="au-inf">
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
+                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
+                                                Investor </p>
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
-                            
+                            </div>
+                            <div class="swiper-slide swiper-slide-next swiper-slide-duplicate-prev"
+                                data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 817px;">
+                                <div class="clients-card">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            “The entire team tactfully delivered a </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            project of exceptional quality while </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            staying on schedule and under </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            budget. More than what i'm </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            expected. I’m really satisfied and </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            recommended!.” </div>
+                                    </div>
+                                    <div class="author">
+                                        <div class="au-img">
+                                            <img src="{{ asset('assets') }}/img/team/team1.jpg" alt=""
+                                                class="img-cover">
+                                        </div>
+                                        <div class="au-inf">
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
+                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
+                                                Investor </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 3"
+                                style="width: 817px;">
+                                <div class="clients-card">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines"
+                                        style="perspective: 400px;">
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            “The entire team tactfully delivered a </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            project of exceptional quality while </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            staying on schedule and under </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            budget. More than what i'm </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            expected. I’m really satisfied and </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            recommended!.” </div>
+                                    </div>
+                                    <div class="author">
+                                        <div class="au-img">
+                                            <img src="{{ asset('assets') }}/img/team/team1.jpg" alt=""
+                                                class="img-cover">
+                                        </div>
+                                        <div class="au-inf">
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
+                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
+                                                Investor </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="2"
+                                role="group" aria-label="3 / 3" style="width: 817px;">
+                                <div class="clients-card">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines"
+                                        style="perspective: 400px;">
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            “The entire team tactfully delivered a </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            project of exceptional quality while </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            staying on schedule and under </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            budget. More than what i'm </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            expected. I’m really satisfied and </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            recommended!.” </div>
+                                    </div>
+                                    <div class="author">
+                                        <div class="au-img">
+                                            <img src="{{ asset('assets') }}/img/team/team1.jpg" alt=""
+                                                class="img-cover">
+                                        </div>
+                                        <div class="au-inf">
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
+                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
+                                                Investor </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next"
+                                data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 817px;">
+                                <div class="clients-card">
+                                    <div class="text fsz-45 fw-600 lh-2 js-splittext-lines"
+                                        style="perspective: 400px;">
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            “The entire team tactfully delivered a </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            project of exceptional quality while </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            staying on schedule and under </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            budget. More than what i'm </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            expected. I’m really satisfied and </div>
+                                        <div
+                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 408.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+                                            recommended!.” </div>
+                                    </div>
+                                    <div class="author">
+                                        <div class="au-img">
+                                            <img src="{{ asset('assets') }}/img/team/team1.jpg" alt=""
+                                                class="img-cover">
+                                        </div>
+                                        <div class="au-inf">
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
+                                            <p class="text-capitalize fsz-14 color-666"> Dash Private Villa Project
+                                                Investor </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <div class="slider-controls">
+                            <div class="swiper-button-prev" tabindex="0" role="button"
+                                aria-label="Previous slide" aria-controls="swiper-wrapper-bbbe4e33852fc931"></div>
+                            <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal">
+                                <span class="swiper-pagination-current">3</span> / <span
+                                    class="swiper-pagination-total">3</span></div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                                aria-controls="swiper-wrapper-bbbe4e33852fc931"></div>
+                        </div>
                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                     </div>
                 </div>
