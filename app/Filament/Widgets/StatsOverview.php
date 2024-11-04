@@ -24,11 +24,7 @@ class StatsOverview extends BaseWidget
             ->orderBy('date', 'ASC')
             ->get();
         
-        $contacts = Contact::whereBetween('created_at', [$startDate, $endDate])
-        ->selectRaw('DATE(created_at) as date, COUNT(*) as count')
-        ->groupBy('date')
-        ->orderBy('date', 'ASC')
-        ->get();
+        $contacts = Contact::get();
 
         // Arrays for dates and visit counts
         $dates = [];
