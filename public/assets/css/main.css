@@ -821,9 +821,9 @@
 }
 
 .tc-map-style1 .map-card {
+  border-radius: 15px;
   overflow: hidden;
   height: 700px;
-  border-radius: 30px;
 }
 
 .tc-map-style1 .map-card #map {
