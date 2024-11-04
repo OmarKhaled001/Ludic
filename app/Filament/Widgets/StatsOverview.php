@@ -30,10 +30,7 @@ class StatsOverview extends BaseWidget
         ->orderBy('date', 'ASC')
         ->get();
 
-        $products = Product::selectRaw('DATE(created_at) as date, COUNT(*) as count')
-        ->groupBy('date')
-        ->orderBy('date', 'ASC')
-        ->get();
+        $products = Product::get();
 
         // Arrays for dates and visit counts
         $dates = [];
