@@ -31,6 +31,8 @@ class ReviewResource extends Resource
                 TextInput::make('author')->required(),
                 TextInput::make('position')->required(),
                 Textarea::make('review')->required(),
+                SpatieMediaLibraryFileUpload::make('author')->collection('authors'),
+
                 // SpatieMediaLibraryFileUpload::make('author')->collection('authors')->label('Profile')->maxSize(10240),
             ]);
     }
