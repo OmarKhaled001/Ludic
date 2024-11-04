@@ -823,7 +823,7 @@
 .tc-map-style1 .map-card {
   border-radius: 25px;
   overflow: hidden;
-  height: 700px;
+  height: 500px;
 }
 
 .tc-map-style1 .map-card #map {
@@ -832,8 +832,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: -6px;
-  -webkit-filter: grayscale(0.7);
-  filter: grayscale(0.7);
+
 }
 
 /* --------------- s-project-pg-style2 --------------- */
