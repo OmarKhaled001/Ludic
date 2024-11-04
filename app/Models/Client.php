@@ -10,4 +10,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Client extends Model implements HasMedia
 {
     use HasFactory ,InteractsWithMedia;
+
+    protected $table   = 'clients';
+
+    protected $fillable =
+    [
+        'name',
+        'email',
+        'phone',
+        'description',
+
+    ];
 }
