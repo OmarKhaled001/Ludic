@@ -10,7 +10,7 @@
                     <div class="info section-padding-x pb-70">
                         <div class="row align-items-end gx-5">
                             <div class="col-lg-6 offset-lg-2">
-                                <h1 data-swiper-parallax="-2000" class="js-title pb-30">{{$service->name}}</h1>
+                                <h1 data-swiper-parallax="-2000" class="js-title">{{$service->name}}</h1>
                                 <h5 class="fsz-30 mt-30 fw-200">{{$service->subtitle}}</h5>
                             </div>
                             <div class="col-lg-3">

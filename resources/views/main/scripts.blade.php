@@ -14,7 +14,7 @@
   <script src="{{asset('assets/js/lib/parallaxie.js')}}"></script>
   <!-- === Gsap === -->
   <script src="{{asset('assets/js/gsap_lib/gsap.min.js')}}"></script>
-  {{-- <script src="{{asset('assets/js/gsap_lib/ScrollSmoother.min.js')}}"></script> --}}
+  <script src="{{asset('assets/js/gsap_lib/ScrollSmoother.min.js')}}"></script>
   <script src="{{asset('assets/js/gsap_lib/ScrollTrigger.min.js')}}"></script>
   <script src="{{asset('assets/js/gsap_lib/SplitText.min.js')}}"></script>
   <!-- === common === -->
@@ -22,3 +22,4 @@
 
   <!-- ===== home scripts ===== -->
   <script src="{{asset('assets/js/main.js')}}"></script>
+
