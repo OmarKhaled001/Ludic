@@ -51,7 +51,7 @@ class SiteVisitsWidget extends ChartWidget
 
         // Fill dates and visit counts
         foreach ($visits as $visit) {
-            $dates[] = Carbon::parse($visit->date)->format('Y-m-d');
+            $dates[] = Carbon::parse($visit->date)->format('m-d');
             $visitCounts[] = $visit->count;
         }
 
