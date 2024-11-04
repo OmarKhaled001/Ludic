@@ -2,6 +2,7 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Contact;
 use Carbon\Carbon;
 use App\Models\Visit;
 use Filament\Widgets\StatsOverviewWidget\Stat;
@@ -22,15 +23,24 @@ class StatsOverview extends BaseWidget
             ->groupBy('date')
             ->orderBy('date', 'ASC')
             ->get();
+        
+        $contacts = Contact::whereBetween('created_at', [$startDate, $endDate])
+        ->selectRaw('DATE(created_at) as date, COUNT(*) as count')
+        ->groupBy('date')
+        ->orderBy('date', 'ASC')
+        ->get();
 
         // Arrays for dates and visit counts
         $dates = [];
         $visitCounts = [];
+        $contactCounts = [];
 
         // Fill dates and visit counts
         foreach ($visits as $visit) {
-            $dates[] = Carbon::parse($visit->date)->format('m-d');
             $visitCounts[] = $visit->count;
+        }
+        foreach ($contacts as $contact) {
+            $contactCounts[] = $contact->count;
         }
 
         return [
@@ -38,9 +48,9 @@ class StatsOverview extends BaseWidget
             ->chart($visitCounts)
             ->color('success')
             ->descriptionIcon('heroicon-m-arrow-trending-up'),
-            Stat::make('Unique views', '192.1k')
-            ->chart([7, 2, 10, 3, 15, 4, 17])
-            ->color('success')
+            Stat::make('Unread messages', Contact::where('seen',0)->count())
+            ->chart( $contactCounts)
+            ->color('danger')
             ->descriptionIcon('heroicon-m-arrow-trending-up'),
             Stat::make('Unique views', '192.1k')
             ->chart([7, 2, 10, 3, 15, 4, 17])
