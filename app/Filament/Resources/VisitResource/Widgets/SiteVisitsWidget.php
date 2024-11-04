@@ -10,7 +10,7 @@ use Filament\Forms\Components\Select;
 class SiteVisitsWidget extends ChartWidget
 {
     protected static ?string $heading = 'Site Visits';
-
+    protected int | string | array $columnSpan = 'full';
     public ?string $timeRange = '30'; // Default value: 30 days
 
     // Time range selection
