@@ -2,16 +2,22 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ClientResource\Pages;
-use App\Filament\Resources\ClientResource\RelationManagers;
-use App\Models\Client;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Client;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\ClientResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use App\Filament\Resources\ClientResource\RelationManagers;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 
 class ClientResource extends Resource
 {
@@ -25,7 +31,15 @@ class ClientResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('name')->required(),
+                TextInput::make('email')->email(),
+                TextInput::make('phone ')->tel(),
+                Textarea::make('description')->columnSpanFull(),
+                SpatieMediaLibraryFileUpload::make('logo')->collection('logos')->label('logo')->maxSize(10240)->columnSpanFull(),
+
+            ])->columns([
+                'sm' => 1,
+                'xl' => 3,
             ]);
     }
 
@@ -33,13 +47,18 @@ class ClientResource extends Resource
     {
         return $table
             ->columns([
-                //
+                SpatieMediaLibraryImageColumn::make('logo')
+                ->collection('logos')->square(),
+                TextColumn::make('name')->searchable(),
+                TextColumn::make('email')->searchable(),
             ])
             ->filters([
                 //
             ])
             ->actions([
+                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
