@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Models\Branch;
+use App\Models\Client;
 use App\Models\Contact;
 use App\Models\Content;
 use App\Models\Page;
+use App\Models\Review;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index(){
-        // get all services
+        //get data
+        $reviews = Review::all();
+        $clients = Client::all();
         // get  page
         $page = Page::where('slug','home')->get()->first();
         // get contents
-        return view('index',compact('page'));
+        return view('index',compact('page','reviews','clients'));
 
     }
     public function about(){
@@ -28,7 +32,7 @@ class PageController extends Controller
 
     }
     public function contact(){
-        // get all services
+        $branches = Branch::all();
         // get all pages
         $page = Page::where('slug','contact-us')->get()->first();
         return view('contact',compact('page'));
