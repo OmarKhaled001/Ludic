@@ -39,7 +39,7 @@ class ClientResource extends Resource
 
             ])->columns([
                 'sm' => 1,
-                'xl' => 3,
+                'lg' => 3,
             ]);
     }
 
