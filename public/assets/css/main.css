@@ -285,7 +285,7 @@
 
   .tc-header-style1 .header-slider .slider-controls .swiper-button-prev::after,
   .tc-header-style1 .header-slider .slider-controls .swiper-button-next::after {
-    font-size: calc(5vw + 20px);
+    font-size: 20px;
   }
 }
 
