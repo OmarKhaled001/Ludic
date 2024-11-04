@@ -9,6 +9,8 @@ use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 
 class StatsOverview extends BaseWidget
 {
+    public ?string $timeRange = '30'; // Default value: 30 days
+    
     protected function getStats(): array
     {
         $startDate = Carbon::now()->subDays($this->timeRange);
