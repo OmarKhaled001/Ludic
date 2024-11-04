@@ -25,10 +25,11 @@ class PageController extends Controller
     }
     public function about(){
         // get all services
+        $clients = Client::all();
         $branches = Branch::all();
         // get all pages
         $page = Page::where('slug','about-us')->get()->first();
-        return view('about',compact('page','branches'));
+        return view('about',compact('page','branches','clients'));
 
     }
     public function contact(){
