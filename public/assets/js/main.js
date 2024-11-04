@@ -173,6 +173,7 @@ $(function () {
 
     // smoother.effects("img", { speed: "auto" });
 
+
     let headings = gsap.utils.toArray(".js-title").reverse();
     headings.forEach((heading, i) => {
         let headingIndex = i + 1;
