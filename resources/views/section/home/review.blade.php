@@ -16,7 +16,7 @@
                                     data-swiper-slide-index="2" role="group"  style="width: 817px;">
                                     <div class="clients-card">
                                         <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        "{{$reviews->review}}"
+                                        "{{$review->review}}"
                                         </div>
                                         <div class="author">
                                             <div class="au-img">
@@ -24,8 +24,8 @@
                                                     class="img-cover">
                                             </div>
                                             <div class="au-inf">
-                                                <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{$reviews->author}}</h6>
-                                                <p class="text-capitalize fsz-14 color-666">{{$reviews->posetion}}</p>
+                                                <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{$review->author}}</h6>
+                                                <p class="text-capitalize fsz-14 color-666">{{$review->posetion}}</p>
                                             </div>
                                         </div>
                                     </div>
