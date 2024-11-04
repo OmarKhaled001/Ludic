@@ -3,6 +3,7 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Contact;
+use App\Models\Product;
 use Carbon\Carbon;
 use App\Models\Visit;
 use Filament\Widgets\StatsOverviewWidget\Stat;
@@ -29,6 +30,11 @@ class StatsOverview extends BaseWidget
         ->orderBy('date', 'ASC')
         ->get();
 
+        $products = Product::selectRaw('DATE(created_at) as date, COUNT(*) as count')
+        ->groupBy('date')
+        ->orderBy('date', 'ASC')
+        ->get();
+
         // Arrays for dates and visit counts
         $dates = [];
         $visitCounts = [];
@@ -51,7 +57,7 @@ class StatsOverview extends BaseWidget
             ->chart( $contactCounts)
             ->color('danger')
             ->descriptionIcon('heroicon-m-arrow-trending-down'),
-            Stat::make('Unique views', '192.1k')
+            Stat::make('Products', $products->count())
             ->chart([7, 2, 10, 3, 15, 4, 17])
             ->color('success')
             ->descriptionIcon('heroicon-m-arrow-trending-up'),
