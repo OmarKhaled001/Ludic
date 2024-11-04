@@ -21,7 +21,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                            Products
                         </a>
                         <ul class="dropdown-menu">
                             @foreach ($services as $service)
