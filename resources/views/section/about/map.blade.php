@@ -3,8 +3,8 @@
         <div class="title mb-20 text-center">
             <h2 class="fsz-45 "> Our Branches </h2>
         </div>
-        <div class="row justify-content-between">
-            <div id="map" style="height: 500px;"></div>
+        <div class="row justify-content-between map-card">
+            <div id="map"></div>
 
         </div>
 
