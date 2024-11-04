@@ -72,7 +72,7 @@ class ProductResource extends Resource
         return $table
             ->columns([
                 SpatieMediaLibraryImageColumn::make('product')
-                ->collection('products'),
+                ->collection('products')->square(),
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('service.name')
                 ->label('Service'),

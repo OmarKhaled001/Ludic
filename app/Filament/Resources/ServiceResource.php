@@ -63,7 +63,7 @@ class ServiceResource extends Resource
         return $table
             ->columns([
                 SpatieMediaLibraryImageColumn::make('service')
-                ->collection('services'),
+                ->collection('services')->square(),
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('products_count')
                 ->counts('products'),
