@@ -1,8 +1,8 @@
 
-<section class="tc-process-style2 p-30">
-        <div class="container ">
+<section class="tc-process-style2">
+        <div class="container">
             <div class="content">
-                <h2 class="fsz-45 fw-500 my-80 text-center"> About Us</h2>
+                <h2 class="fsz-45 fw-500 mb-80 text-center"> About Us</h2>
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="accordion-side wow fadeInUp slow"
