@@ -841,7 +841,11 @@
   --color-secondary: #000;
   --color-orange: var(--color-orange1);
 }
-
+.about{
+  position: absolute;
+  padding: 100px 0;
+  overflow: hidden;
+}
 /* --------------- s-project-pg-style2 --------------- */
 .s-project-pg-style2 .smooth-scroll-content {
   position: relative;
