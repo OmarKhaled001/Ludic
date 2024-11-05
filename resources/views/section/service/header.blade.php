@@ -72,7 +72,7 @@
                             style="transform: translate3d(-1654px, 0px, 0px); transition-duration: 0ms;">
                             @foreach ($service->products as $product)
                                 <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="{{ $loop->iteration-1 }}"
-                                    role="group" aria-label="{{ $loop->iteration / $products->count() }}" style="width: 383.5px; margin-right: 30px;">
+                                    role="group" aria-label="{{ $loop->iteration / $service->products->count() }}" style="width: 383.5px; margin-right: 30px;">
                                     <div class="post-card">
                                         <a href="#" class="img th-280 radius-7 overflow-hidden d-block">
                                             <img src="{{$product->getMedia('products')->first()->getUrl()}}" alt="{{$product->name}}" alt="" class="img-cover">
@@ -101,5 +101,5 @@
         </div>
         @endif
 
-    </div>
+    </div>$service->
 </section>
