@@ -44,11 +44,11 @@
             </div>
         </div>
         @if ($service->products->count() > 0)
+        <div class="col-lg-8">
+            <h3 class="fsz-45 text-capitalize mb-50"> Products </h3>
+        </div>
         <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s"
-            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-            <div class="col-lg-8">
-                <h3 class="fsz-45 text-capitalize"> Products </h3>
-            </div>
+        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
             <div class="row mixitup" id="MixItUp4FCD54">
                 @foreach ($service->products as $product)
                     <div class="col-lg-4 mix-item">
@@ -59,7 +59,7 @@
                             </a>
                             <div class="info">
 
-                                <h3 class="title fsz-35 mb-20"> {{ $product->name }}</h3>
+                                <h4 class="title fsz-35 mb-20"> {{ $product->name }}</h3>
                                 <div class="text color-666">{{ $product->details }}</div>
                             </div>
                         </div>
