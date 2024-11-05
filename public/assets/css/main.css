@@ -360,6 +360,8 @@
   .tc-experience-style1 .img {
     transform: rotate(0);
     margin-bottom: 50px;
+    opacity:100%;
+
   }
 
   .tc-experience-style1 .exp-num .num {
