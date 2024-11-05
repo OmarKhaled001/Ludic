@@ -1524,13 +1524,13 @@
 }
 
 .tc-process-style2 .imgs .img img {
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .tc-process-style2 .imgs .img:nth-of-type(1) {
-  width: 360px;
+  width: 300px;
   height: 360px;
-  border-radius: 50%;
+  border-radius: 25px;
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);

@@ -82,14 +82,7 @@
                             <img src="{{ asset('assets/img/exp.png') }}" alt="" class="img-cover">
                         </div>
                     
-                        <div class="img" data-lag="0.3" data-speed="1"
-                            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); will-change: transform;">
-                            <img src="{{ asset('assets/img/exp.png') }}" alt="" class="img-cover">
-                        </div>
-                        <div class="img" data-lag="0.5" data-speed="1"
-                            style="translate: none; rotate: none; scale: none; transform: translate(240px, 0px); will-change: transform;">
-                            <img src="{{ asset('assets/img/exp.png') }}" alt="" class="img-cover">
-                        </div>
+                     
                     </div>
                 </div>
             </div>
