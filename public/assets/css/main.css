@@ -738,9 +738,9 @@
 }
 
 .tc-chat-style1 .xl-text {
-  font-size: 80px;
+  font-size: 800px;
   font-weight: 500;
-  position: absolute;
+  position: relative;
   z-index: 10;
   line-height: 1;
   color: var(--color-orange1);
@@ -749,7 +749,7 @@
 
 @media screen and (max-width: 991px) {
   .tc-chat-style1 .xl-text {
-    font-size: 50px;
+    font-size: 23px;
   }
 }
 
