@@ -431,6 +431,9 @@
   .tc-team .numbers .number-card p {
     font-size: 15px;
   }
+  .tc-experience-style1 .img {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 575px) {
