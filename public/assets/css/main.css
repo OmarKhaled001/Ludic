@@ -474,10 +474,7 @@
   z-index: 99;
 }
 
-.tc-testimonials-style2 .logos {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .tc-testimonials-style2 .logos a {
   height: 45px;
