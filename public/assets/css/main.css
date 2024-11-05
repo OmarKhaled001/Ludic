@@ -270,6 +270,7 @@
 
   .tc-header-style1 .slider-card .info {
     bottom: 60px;
+    padding: 10px;
   }
 
   .tc-header-style1 .swiper-pagination {
