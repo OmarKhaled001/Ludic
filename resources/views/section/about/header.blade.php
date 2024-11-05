@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="imgs">
-                            <div class="img" data-lag="0.2" data-speed="1"
+                            <div class="img"
                                 style="translate: none; rotate: none; scale: none; transform: translate(50px, 0px); will-change: transform;">
                                 <img src="{{ asset('assets/img/exp.png') }}" alt="" class="img-cover">
                             </div>

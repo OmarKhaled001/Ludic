@@ -1415,7 +1415,7 @@
 /* --------------- process style2 --------------- */
 .tc-process-style2 {
   position: relative;
-  padding: 110px 0;
+  padding: 150px 0;
   overflow: hidden;
 }
 
@@ -1500,8 +1500,8 @@
 }
 
 .tc-process-style2 .accordion-item .accordion-body .text {
-  font-size: 15px;
-  color: #666;
+  font-size: 18px;
+  color: #303030;
 }
 
 .tc-process-style2 .imgs {
@@ -1510,6 +1510,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .tc-process-style2 .imgs .img {
