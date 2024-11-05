@@ -88,6 +88,6 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('assets') }}/img/prc_bg.png" alt="" class="bg" data-speed="1.2" data-lag="0" style="translate: none; rotate: none; scale: none; transform: translate(0px, 194.75px); will-change: transform;">
+        <img src="{{ asset('assets') }}/img/prc_bg.png" alt="" class="bg" >
     
 </section>
