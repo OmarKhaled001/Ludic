@@ -5,7 +5,7 @@
         </div>
         <div class="logos">
             @foreach ($clients as $client)
-                <a href="#" class="mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}" loading="lazy"> </a>
+                <a href="#" class="mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}" > </a>
             @endforeach
         </div>
     </div>

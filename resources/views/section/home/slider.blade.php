@@ -5,7 +5,7 @@
             <div class="swiper-slide">
                 <div class="slider-card">
                     <div class="img">
-                        <img src="{{$service->getMedia('services')->first()->getUrl()}}" alt="{{$service->name}}"  loading="lazy" class="img-cover">
+                        <img src="{{$service->getMedia('services')->first()->getUrl()}}" alt="{{$service->name}}" class="img-cover">
                     </div>
                     <div class="info section-padding-x pb-70">
                         <div class="row align-items-end gx-5">
