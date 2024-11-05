@@ -12,16 +12,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link-dark" href="{{route('index')}}">Home</a>
+                        <a class="nav-link text-dark" href="{{route('index')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-dark" href="{{route('about')}}">About Us</a>
+                        <a class="nav-link text-dark" href="{{route('about')}}">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
                         </a>
                         <ul class="dropdown-menu">
                             @foreach ($services as $service)
@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link-dark" href="{{route('contact')}}">Contact Us</a>
+                        <a class="nav-link text-dark" href="{{route('contact')}}">Contact Us</a>
                     </li>
                 </ul>
               

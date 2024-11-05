@@ -43,11 +43,10 @@
   /* Added smooth color transition */
 }
 
-.tc-navbar .content .navbar-nav .nav-link-dark {
+.tc-navbar .content .navbar-nav .text-dark {
   font-size: 14px;
   color: #000000;
   opacity: 1;
-  margin: 0 20px;
 }
 
 .tc-navbar .content .navbar-nav .nav-link:hover,
@@ -80,7 +79,7 @@
 
   .tc-navbar .dropdown-menu .dropdown-item {
     position: relative;
-    background-color: #333;
+    background-color: #000000;
   }
 
   .tc-navbar .content {
@@ -120,10 +119,7 @@
     width: 100%;
   }
 
-  .tc-navbar .dropdown-menu {
-    background-color: #000000;
-  }
-
+ 
   .tc-navbar .dropdown-menu {
     background-color: #000000;
   }
@@ -134,11 +130,10 @@
     color: var(--color-orange1);
   }
 
-  .tc-navbar .content .navbar-nav .nav-link-dark {
+  .tc-navbar .content .navbar-nav .text-dark {
     font-size: 14px;
     color: #fff;
     opacity: 1;
-    margin: 0 20px;
   }
 
 
