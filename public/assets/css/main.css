@@ -844,8 +844,8 @@
 .smooth-scroll-content{
   inset: 0px;
   width: 100%;
-  height: 100%;
-  position: fixed;
+  min-height: 100vh;
+  position: absolute;
   overflow: hidden;
 }
 /* --------------- s-project-pg-style2 --------------- */
