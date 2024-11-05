@@ -841,13 +841,7 @@
   --color-secondary: #000;
   --color-orange: var(--color-orange1);
 }
-.smooth-scroll-content{
-  inset: 0px;
-  width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  overflow: hidden;
-}
+
 /* --------------- s-project-pg-style2 --------------- */
 .s-project-pg-style2 .smooth-scroll-content {
   position: relative;
