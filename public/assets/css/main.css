@@ -494,10 +494,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .tc-testimonials-style2 .logos {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+
 
   .tc-testimonials-style2 .logos a {
     width: 30%;
