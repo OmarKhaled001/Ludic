@@ -5,7 +5,7 @@
         </div>
         <div class="logos row">
             @foreach ($clients as $client)
-                <a href="#" class="col-lg-3 mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}"> </a>
+                <a href="#" class="col-12 col-lg-3 mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}"> </a>
             @endforeach
         </div>
     </div>
