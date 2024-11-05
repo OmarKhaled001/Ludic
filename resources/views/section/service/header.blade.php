@@ -54,8 +54,7 @@
                     <div class="col-lg-4 mix-item">
                         <div class="case-card">
                             <a href="#" class="img" data-fancybox="cases">
-                                <img src="{{ $product->getMedia('products')->first()->getUrl() }}" alt=""
-                                    >
+                                <img src="{{ $product->getMedia('products')->first()->getUrl() }}" alt="" style="height: 300px; border-radius: 15px;">
                             </a>
                             <div class="info">
 
