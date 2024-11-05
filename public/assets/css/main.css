@@ -93,7 +93,7 @@
   .tc-navbar .content {
     display: flex;
     flex-wrap: inherit;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
   }
 
@@ -112,7 +112,6 @@
   }
 
   .tc-navbar .content .navbar-nav .nav-link {
-    margin: 10px 0;
     text-align: left;
     width: 100%;
   }
@@ -142,6 +141,10 @@
     position: relative;
     background-color: #333;
   }
+  .tc-navbar-style1 .dropdown-menu .dropdown-item {
+    position: relative;
+    background-color: #333;
+  }
 
   .tc-navbar-style1 .content {
     border: 0;
@@ -151,9 +154,7 @@
     margin: 20px 0;
   }
 
-  .tc-navbar-style1 .content .navbar-nav .nav-link {
-    margin: 0;
-  }
+ 
 }
 
 /* end nav */
