@@ -749,7 +749,8 @@
 
 @media screen and (max-width: 991px) {
   .tc-chat-style1 .xl-text {
-    font-size: 23px;
+    font-size: 26px;
+    font-weight: 500;
   }
 }
 
