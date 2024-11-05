@@ -78,7 +78,7 @@
                         <div class="imgs">
                             <div class="img"
                                 style="translate: none; rotate: none; scale: none; transform: translate(50px, 0px); will-change: transform;">
-                                <img src="{{ asset('assets/img/exp.png') }}" alt="" class="img-cover">
+                                <img src="{{ asset('assets/img/exp.png') }}" alt="ludic" class="img-cover" loading="lazy">
                             </div>
                         
                          
@@ -87,6 +87,6 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('assets') }}/img/prc_bg.png" alt="" class="bg" >
+        <img src="{{ asset('assets') }}/img/prc_bg.png" alt="" class="bg" loading="lazy">
     
 </section>

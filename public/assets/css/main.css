@@ -474,12 +474,16 @@
   z-index: 99;
 }
 
-
+.tc-testimonials-style2 .logos {
+  display: flex;
+  justify-content: space-between;
+}
 
 .tc-testimonials-style2 .logos a {
   height: 45px;
   opacity: var(--hover-opacity);
   transition: opacity 0.3s;
+  /* إضافة تأثير انتقالي */
 }
 
 .tc-testimonials-style2 .logos a:hover {
@@ -493,7 +497,10 @@
 }
 
 @media screen and (max-width: 991px) {
-
+  .tc-testimonials-style2 .logos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
   .tc-testimonials-style2 .logos a {
     width: 30%;
@@ -2024,7 +2031,7 @@
 }
 
 .tc-footer .foot .logo img {
-  height: 40px;
+  height: 35px;
   object-fit: contain;
 }
 

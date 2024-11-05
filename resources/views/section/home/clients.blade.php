@@ -3,9 +3,9 @@
         <div class="title mb-20 text-center">
             <h2 class="fsz-45 text-light"> Our Clients </h2>
         </div>
-        <div class="logos row">
+        <div class="logos">
             @foreach ($clients as $client)
-                <a href="#" class="col-12 col-sm-6 col-lg-3 mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}"> </a>
+                <a href="#" class="mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}" loading="lazy"> </a>
             @endforeach
         </div>
     </div>

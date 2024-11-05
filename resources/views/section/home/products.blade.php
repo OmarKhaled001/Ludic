@@ -7,13 +7,13 @@
                     <div class="member-colmn">
                         <a href="#" class="team-card wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team1.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team1.jpg" loading="lazy" alt="" class="img-cover">
                             </div>
                             <h5 class="title"> Ethiopian <br> Yirgacheffe  </h5>
                         </a>
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team2.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team2.jpg" loading="lazy"  alt="" class="img-cover">
                             </div>
                             <h5 class="title"> Medjool <br> Dates </h5>
                         </a>
@@ -23,7 +23,7 @@
                     <div class="member-colmn">
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
                             <div class="img" style="height: 393.323px;">
-                                <img src="{{asset('assets')}}/img/team/team3.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team3.jpg" loading="lazy" alt="" class="img-cover">
                             </div>
                             <h5 class="title"> Pistachios </h5>
                         </a>
@@ -33,13 +33,13 @@
                     <div class="member-colmn">
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team4.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team4.jpg" loading="lazy" alt="" class="img-cover">
                             </div>
                             <h5 class="title"> jhon <br> handerson </h5>
                         </a>
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team5.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team5.jpg" loading="lazy" alt="" class="img-cover">
                             </div>
                             <h5 class="title"> jhon <br> handerson </h5>
                         </a>
@@ -49,7 +49,7 @@
                     <div class="member-colmn">
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team6.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team6.jpg" alt="" loading="lazy" class="img-cover">
                             </div>
                             <h5 class="title"> Roasted <br> Almonds </h5>
                         </a>
@@ -64,7 +64,7 @@
                     <div class="member-colmn">
                         <a href="#" class="team-card wow zoomIn" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: zoomIn;">
                             <div class="img" style="height: 181.656px;">
-                                <img src="{{asset('assets')}}/img/team/team7.jpg" alt="" class="img-cover">
+                                <img src="{{asset('assets')}}/img/team/team7.jpg" alt="" loading="lazy" class="img-cover">
                             </div>
                             <h5 class="title"> jhon <br> handerson </h5>
                         </a>
