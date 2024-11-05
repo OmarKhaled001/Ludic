@@ -79,6 +79,7 @@
 
   .tc-navbar .dropdown-menu .dropdown-item {
     position: relative;
+    color: #fff;
     background-color: #000000;
   }
 
@@ -123,9 +124,7 @@
   .tc-navbar .dropdown-menu {
     background-color: #000000;
   }
-  .tc-navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #20201F;
-  }
+ 
   .tc-navbar .dropdown-menu a:hover {
     color: var(--color-orange1);
   }
