@@ -28,6 +28,8 @@
             @include('section.about.header')
             @include('section.home.clients')
             @include('section.about.map')
+            @include('section.contact.form')
+
             @include('section.home.mail')
             
         </main>
