@@ -1555,7 +1555,7 @@
   top: 150px;
   width: 160px;
   height: 160px;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .tc-process-style2 .imgs .img:nth-of-type(2)::after {
@@ -1569,7 +1569,7 @@
   background-image: -webkit-linear-gradient(bottom, #000000c5, transparent);
   background-image: -o-linear-gradient(bottom, #000000c5, transparent);
   background-image: linear-gradient(to top, #000000c5, transparent);
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .tc-process-style2 .imgs .img:nth-of-type(2) .txt {
@@ -1588,7 +1588,7 @@
   top: 300px;
   width: 220px;
   height: 220px;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .tc-process-style2 .imgs .img:nth-of-type(3)::after {
@@ -1602,7 +1602,7 @@
   background-image: -webkit-linear-gradient(bottom, #000000c5, transparent);
   background-image: -o-linear-gradient(bottom, #000000c5, transparent);
   background-image: linear-gradient(to top, #000000c5, transparent);
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .tc-process-style2 .imgs .img:nth-of-type(3) .txt {
@@ -1621,7 +1621,7 @@
 .tc-process-style2 .imgs .img:nth-of-type(4) {
   width: 240px;
   height: 240px;
-  border-radius: 50%;
+  border-radius: 25px;
   margin-top: 40px;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -1734,7 +1734,7 @@
   height: 160px;
   background-color: #fff;
   border-radius: 50%;
-  display: -webkit-box;
+    display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
