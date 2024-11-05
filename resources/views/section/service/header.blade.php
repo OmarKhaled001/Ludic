@@ -46,10 +46,10 @@
         @if ($service->products->count() > 0)
         <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s"
             style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="col-lg-8">
+                <h3 class="fsz-45 text-capitalize"> Products </h3>
+            </div>
             <div class="row mixitup" id="MixItUp4FCD54">
-                <div class="col-lg-8">
-                    <h3 class="fsz-45 text-capitalize"> Products </h3>
-                </div>
                 @foreach ($service->products as $product)
                     <div class="col-lg-4 mix-item">
                         <div class="case-card">

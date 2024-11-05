@@ -2409,8 +2409,8 @@
 
 .cases-content .content .case-card .img {
   display: block;
-  height: 600px;
-  border-radius: 15px;
+  height: 300px !important;
+  border-radius: 15px !important;
   overflow: hidden;
 }
 
@@ -2429,10 +2429,6 @@
 }
 @media screen and (max-width: 991px) {
 
-  .cases-content .content .case-card .img {
-    height: 300px;
-  }
-
 
 
   .cases-content .content .case-card {
@@ -2440,6 +2436,6 @@
   }
 
   .cases-content .content .case-card .img {
-    height: 250px;
+    height: 250px !important;
   }
   }
