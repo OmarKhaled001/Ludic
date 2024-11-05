@@ -1650,8 +1650,8 @@
   }
 
   .tc-process-style2 .imgs .img {
-    width: 48% !important;
-    height: 250px !important;
+    width: 100% !important;
+    height: 350px !important;
     border-radius: 30px !important;
     margin: 1% !important;
     position: relative !important;
