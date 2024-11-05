@@ -2407,7 +2407,7 @@
 }
 
 
-.cases-content .content .case-card .img {
+.cases-content .content .case-card .img-cover {
   display: block;
   height: 300px !important;
   border-radius: 15px !important;
@@ -2435,7 +2435,7 @@
     margin-bottom: 50px;
   }
 
-  .cases-content .content .case-card .img {
+  .cases-content .content .case-card .img-cover {
     height: 250px !important;
   }
   }
