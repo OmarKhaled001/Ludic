@@ -468,9 +468,7 @@
   }
 }
 
-/* end about */
 
-/* start products */
 :root {
   --bg-color: #000000;
   --text-color: #fff;
@@ -478,7 +476,6 @@
   --hover-opacity: 0.5;
   --hover-opacity-active: 1;
   --color-orange: var(--color-orange1);
-  /* تأكد من تعريف هذا المتغير في مكان ما */
 }
 
 .tc-testimonials-style2 {
@@ -489,14 +486,14 @@
 
 .tc-testimonials-style2 .logos {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .tc-testimonials-style2 .logos a {
-  height: 45px;
+  height: 35px;
   opacity: var(--hover-opacity);
   transition: opacity 0.3s;
-  /* إضافة تأثير انتقالي */
 }
 
 .tc-testimonials-style2 .logos a:hover {
