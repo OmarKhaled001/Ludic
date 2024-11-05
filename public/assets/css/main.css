@@ -2407,11 +2407,16 @@
 }
 
 
-.cases-content .content .case-card .img-cover {
+.cases-content .content .case-card .img {
   display: block;
   height: 300px !important;
   border-radius: 15px !important;
   overflow: hidden;
+}
+.cases-content .content .case-card .img img{
+
+  width: 100%;
+  height: 100%;
 }
 
 .cases-content .content .case-card .info {
@@ -2435,7 +2440,11 @@
     margin-bottom: 50px;
   }
 
-  .cases-content .content .case-card .img-cover {
+  .cases-content .content .case-card .img {
     height: 250px !important;
+  }
+  .cases-content .content .case-card .img img{
+    width: 100%;
+    height: 100%;
   }
   }

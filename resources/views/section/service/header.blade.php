@@ -55,7 +55,7 @@
                         <div class="case-card">
                             <a href="#" class="img" data-fancybox="cases">
                                 <img src="{{ $product->getMedia('products')->first()->getUrl() }}" alt=""
-                                    class="img-cover">
+                                    >
                             </a>
                             <div class="info">
 
