@@ -137,20 +137,23 @@
 }
 
 @media screen and (max-width: 991px) {
-  .tc-navbar-style1 {
+  .tc-navbar {
     position: relative;
     background-color: #333;
   }
-  .tc-navbar-style1 .dropdown-menu .dropdown-item {
+  .tc-navbar .dropdown-menu .dropdown-item {
     position: relative;
     background-color: #333;
   }
 
-  .tc-navbar-style1 .content {
+  .tc-navbar .content {
     border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
 
-  .tc-navbar-style1 .content .navbar-nav {
+  .tc-navbar .content .navbar-nav {
     margin: 20px 0;
   }
 
