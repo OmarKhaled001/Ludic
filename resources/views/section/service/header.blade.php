@@ -43,6 +43,8 @@
                 </div>
             </div>
         </div>
+        @if ($service->products->count() > 0)
+            
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="related-posts">
@@ -68,7 +70,7 @@
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="swiper-wrapper" id="swiper-wrapper-ced30b7b00b21135" aria-live="off"
                             style="transform: translate3d(-1654px, 0px, 0px); transition-duration: 0ms;">
-                            @foreach ($products as $product)
+                            @foreach ($service->products as $product)
                                 <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="{{ $loop->iteration-1 }}"
                                     role="group" aria-label="{{ $loop->iteration / $products->count() }}" style="width: 383.5px; margin-right: 30px;">
                                     <div class="post-card">
@@ -97,6 +99,7 @@
                 </div>
             </div>
         </div>
+        @endif
 
     </div>
 </section>
