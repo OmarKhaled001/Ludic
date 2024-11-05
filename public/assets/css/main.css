@@ -63,7 +63,7 @@
 .tc-navbar .dropdown-menu {
   border-radius: 10px;
   overflow: hidden;
-  color: #fff;
+  color: #fff !important;
   background-image: linear-gradient(-45deg, #45261F, #20201F, #34301C);
 }
 .tc-navbar .dropdown-menu .dropdown-item:hover {
@@ -82,7 +82,9 @@
     color: #fff;
     background-color: #000000;
   }
-
+  .tc-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #000000;
+  }
   .tc-navbar .content {
     border: 0;
     display: flex;
