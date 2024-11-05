@@ -1,8 +1,7 @@
 
 <section class="tc-process-style2">
     <div class="container">
-        <h2 class="fsz-45 fw-500 mb-80 text-center"> Our Approach <span
-                class="sub-font fst-italic color-orange1 fw-400"> process </span> </h2>
+        <h2 class="fsz-45 fw-500 mb-80 text-center"> About Us</h2>
         <div class="content">
             <div class="row">
                 <div class="col-lg-5">
