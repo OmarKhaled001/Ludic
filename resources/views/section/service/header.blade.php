@@ -44,62 +44,30 @@
             </div>
         </div>
         @if ($service->products->count() > 0)
-            
         <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="related-posts">
-                    <div class="title mb-70">
-                        <div class="row align-items-center wow fadeInUp slow" data-wow-delay="0.2s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                            <div class="col-lg-8">
-                                <h3 class="fsz-45 text-capitalize"> Products </h3>
-                            </div>
-                            <div class="col-lg-4 mt-4 mt-lg-0">
-                                <div class="arrows me-lg-0 ms-lg-auto">
-                                    <div class="swiper-button-prev" tabindex="0" role="button"
-                                        aria-label="Previous slide" aria-controls="swiper-wrapper-ced30b7b00b21135">
-                                    </div>
-                                    <div class="swiper-button-next" tabindex="0" role="button"
-                                        aria-label="Next slide" aria-controls="swiper-wrapper-ced30b7b00b21135"></div>
+            
+            <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s"
+            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="row mixitup" id="MixItUp4FCD54">
+                        @foreach ($service->products as $product)
+                        <div class="col-lg-4 mix-item">
+                            <div class="case-card">
+                                <a href="#" class="img" data-fancybox="cases">
+                                    <img src="{{$product->getMedia('products')->first()->getUrl()}}" alt="" class="img-cover">
+                                </a>
+                                <div class="info">
+    
+                                    <h3 class="title fsz-35 mb-20"> {{ $product->name }}/h3>
+                                    <div class="text color-666">{{$product->details}}</div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                    <div class="related-slider wow fadeInUp slow swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
-                        data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="swiper-wrapper" id="swiper-wrapper-ced30b7b00b21135" aria-live="off"
-                            style="transform: translate3d(-1654px, 0px, 0px); transition-duration: 0ms;">
-                            @foreach ($service->products as $product)
-                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="{{ $loop->iteration-1 }}"
-                                    role="group" aria-label="{{ $loop->iteration / $service->products->count() }}" style="width: 383.5px; margin-right: 30px;">
-                                    <div class="post-card">
-                                        <a href="#" class="img th-280 radius-7 overflow-hidden d-block">
-                                            <img src="{{$product->getMedia('products')->first()->getUrl()}}" alt="{{$product->name}}" alt="" class="img-cover">
-                                        </a>
-                                        <div class="info pt-30">
-                                            <div class="tags color-666 text-uppercase fsz-12">
-                                                <a href="#" class="color-orange1"> {{$product->name}}</a>
-                                                <span class="circle icon-3 bg-666 rounded-circle mx-3"></span>
-                                            </div>
-                                            <h3 class="title mt-15"> <a href="#" class="hover-orange1 fsz-24">
-                                                {{$product->name}}
-                                                </a> </h3>
-                                                <p>
-                                                    {{$product->details}}
-                                                    
-                                                </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    </div>
+    
                 </div>
             </div>
-        </div>
         @endif
 
-    </div>$service->
+    </div>
 </section>

@@ -2405,3 +2405,41 @@
     margin-inline-start: 30px !important;
   }
 }
+
+
+.cases-content .content .case-card .img {
+  display: block;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.cases-content .content .case-card .info {
+  padding-top: 30px;
+}
+
+.cases-content .content .case-card .info .tags a {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 25px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  -webkit-margin-end: 5px;
+  margin-inline-end: 5px;
+}
+@media screen and (max-width: 991px) {
+
+  .cases-content .content .case-card .img {
+    height: 300px;
+  }
+
+
+
+  .cases-content .content .case-card {
+    margin-bottom: 50px;
+  }
+
+  .cases-content .content .case-card .img {
+    height: 250px;
+  }
+  }
