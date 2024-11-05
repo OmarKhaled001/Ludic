@@ -51,7 +51,7 @@
         style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
             <div class="row mixitup" id="MixItUp4FCD54">
                 @foreach ($service->products as $product)
-                    <div class="col-lg-4 mix-item">
+                    <div class="col-lg-4 mix-item mb-50">
                         <div class="case-card">
                             <a href="#" class="img" data-fancybox="cases">
                                 <img src="{{ $product->getMedia('products')->first()->getUrl() }}" alt="" style="height: 300px; border-radius: 15px;width: 100%;" class="img-cover mb-20">
