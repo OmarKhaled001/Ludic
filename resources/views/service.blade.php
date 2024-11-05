@@ -12,9 +12,9 @@
         <title>Ludic - {{$service->name}}</title>
         @include('main.meta')
 </head>
-<body style="height: 6351px; touch-action: pan-x pinch-zoom; overscroll-behavior: none; scroll-behavior: auto;">
+<body >
     @include('main.loader')
-    <div class="smooth-scroll-content" id="scrollsmoother-container" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden;">
+    <div class="smooth-scroll-content" id="scrollsmoother-container">
         @include('main.nav')
         @include('section.service.header')
         <main>
