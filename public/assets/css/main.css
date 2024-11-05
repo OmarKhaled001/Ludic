@@ -2274,12 +2274,13 @@
   }
 
   .tc-main-img-style1 .main-img {
-    height: 400px;
+    height: 250px;
   }
 
   .tc-main-img-style1 .content .title {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 80px;
+    padding-bottom: 20px;
   }
 
   .tc-post-content-style1 .breadcromb {
@@ -2314,7 +2315,7 @@
 }
 
 .tc-main-img-style1 .main-img {
-  height: 900px;
+  height: 400px;
   overflow: hidden;
 }
 
