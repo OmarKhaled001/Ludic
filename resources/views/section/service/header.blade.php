@@ -5,13 +5,8 @@
     <div class="content">
         <div class="container" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
             <div class="info">
-                <div class="date fsz-12 text-uppercase mb-30">
-                    <a href="#"> {{$service->name}} </a>
-                    <span class="circle icon-3 bg-white rounded-circle mx-3"></span>
-                    <a href="#"> march 24, 2024 </a>
-                </div>
-                <h2 class="title"> <a href="#" class="hover-orange1"> Top 10 Wooden Architecture Building
-                        2023 </a> </h2>
+             
+                <h2 class="title"> <a href="#" class="hover-orange1"> {{$service->name}} </a> </h2>
             </div>
         </div>
     </div>
@@ -25,38 +20,22 @@
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <a href="#"> Home </a>
                         <span class="icon">/</span>
-                        <a href="#"> News </a>
+                        <a href="#"> Products </a>
                         <span class="icon">/</span>
-                        <a href="#"> Top 10 Wooden Architecture Building 2023 </a>
+                        <a href="#"> {{$service->name}}</a>
                     </div>
                     <h6 class="fsz-24 fw-600 mb-60 wow fadeInUp slow" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> Are you tired
-                        of feeling cramped in your bathroom? It's easy for this essential space to become
-                        <span class="color-orange1"> cluttered and difficult </span> to navigate, especially
-                        in smaller homes or apartments.
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> 
+                        <span class="color-orange1">{{$service->subtitle}}</span>
                     </h6>
-                    <div class="text fsz-14 color-666 mb-70 wow fadeInUp slow" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <span class="lg-letter"> s </span> uccess needs hard work. Don’t listen to these
-                        ‘get rich quick’ schemes. You need to build your character and work hard on yourself
-                        and your business to achieve greatness. Worked hard and work smart. Do the right
-                        things and do them in the right way. Don’t think much to procrastinate. Take bold
-                        actions. Work long hours and craft your legacy. Successful people do not see
-                        failures as failures. They see them as important learning lessons. Be with people
-                        who have utmost conviction and patience. The battle is never lost until you’ve
-                        abandon your vision. But what if it’s truth, you’re really exhausted physically,
-                        mentally, and most of all emotionally? Here are some sources of motivation to prompt
-                        you in reaching the peak of accomplishment.
-                    </div>
+                   
                     <h6 class="fsz-24 fw-600 mb-30 wow fadeInUp slow" data-wow-delay="0.2s"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> Let’s start
                         from simple steps </h6>
                     <div class="text fsz-14 color-666 mb-70 wow fadeInUp slow" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"> Never
-                        ever think of giving up. Winners never quit and quitters never win. <a href="#"
-                            class="text-info text-decoration-underline"> Take all negative </a> words out of
-                        your mental dictionary and focus on the solutions with utmost conviction and
-                        patience. The battle is never lost until you’ve abandon your vision. </div>
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        {{$service->details}}
+                    </div>
                 </div>
             </div>
         </div>
