@@ -6,11 +6,11 @@
                 @foreach ($services as $service)
                 <div class="col-lg-4">
                     <div class="member-colmn">
-                        <a href="#" class="team-card wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                            <div class="img" style="height: 181.656px;">
+                        <a href="{{route('service',$service->slug)}}" class="team-card wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                            <div class="img" style="height: 150px;">
                                 <img src="{{$service->getMedia('services')->first()->getUrl()}}" alt="{{$service->name}}" class="img-cover">
                             </div>
-                            <h5 class="title">{{$service->name}}</h5>
+                            <h4 class="title">{{$service->name}}</h5>
                         </a>
                     </div>
                 </div>
