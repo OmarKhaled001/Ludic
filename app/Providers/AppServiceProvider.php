@@ -2,9 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use App\Models\Branch;
 use App\Models\Service;
 use App\Models\Setting;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,9 +25,11 @@ class AppServiceProvider extends ServiceProvider
         
         $services = Service::where('is_active', 1)->get();
         $setting =Setting::first();
+        $branches = Branch::all();
 
         view()->share([
             'services' => $services,
+            'branches' => $branches,
             'setting' => $setting,
 
         ]);
