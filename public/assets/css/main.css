@@ -754,7 +754,7 @@
 
 @media screen and (max-width: 991px) {
   .tc-chat-style1 .xl-text {
-    font-size: 42px;
+    font-size: 35px;
     font-weight: 700;
   }
 }
@@ -1650,7 +1650,7 @@
     padding: 80px 0;
   }
   .tc-inner-header-style1 h1{
-      font-size: 110px;
+      font-size: 95px;
     }
 
   .tc-process-style2 .imgs {
