@@ -127,7 +127,7 @@
     width: 100%;
   }
   .tc-navbar .content .navbar-nav .nav-link .text-dark {
-    color: #fff;
+    color: #fff !important;
   }
  
   .tc-navbar .dropdown-menu {
@@ -140,7 +140,7 @@
 
   .tc-navbar .content .navbar-nav .text-dark {
     font-size: 14px;
-    color: #fff;
+    color: #fff !important;
     opacity: 1;
   }
 
