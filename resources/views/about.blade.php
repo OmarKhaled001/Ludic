@@ -50,8 +50,8 @@
     
         @foreach($branches as $branch)
             var marker = L.marker([{{ $branch->latitude }}, {{ $branch->longitude }}], {icon: redIcon}).addTo(map);
-            marker.bindPopup("<b>{{ $branch->name }}</b><br>{{ $branch->address }}");
-            bounds.push([{{ $branch->latitude }}, {{ $branch->longitude }}]);
+            marker.bindPopup("<b>{{ $branch->country->name }}");
+                bounds.push([{{ $branch->latitude }}, {{ $branch->longitude }}]);
         @endforeach
     
         if (bounds.length > 0) {
