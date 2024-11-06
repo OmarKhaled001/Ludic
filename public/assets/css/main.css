@@ -418,7 +418,7 @@
   }
 
   .tc-team .numbers .number-card {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .tc-team .numbers .number-card .perc {
@@ -452,7 +452,7 @@
   }
 
   .tc-team .numbers .number-card .perc {
-    font-size: 35px;
+    font-size: 50px;
   }
 
   .tc-team .numbers .number-card p {
@@ -751,8 +751,8 @@
 
 @media screen and (max-width: 991px) {
   .tc-chat-style1 .xl-text {
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 42px;
+    font-weight: 700;
   }
 }
 
@@ -1646,6 +1646,9 @@
   .tc-process-style2 {
     padding: 80px 0;
   }
+  .tc-inner-header-style1 h1{
+      font-size: 110px;
+    }
 
   .tc-process-style2 .imgs {
     margin-top: 50px;
@@ -2261,7 +2264,7 @@
   }
 
   .fsz-45 {
-    font-size: 30px !important;
+    font-size: 40px !important;
   }
 
   .tc-main-img-style1 .main-img {
