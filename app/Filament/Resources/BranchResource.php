@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\BranchResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\BranchResource\RelationManagers;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 
 class BranchResource extends Resource
 {
@@ -47,6 +48,8 @@ class BranchResource extends Resource
                 ]
                 )
                 ->label('Country'),
+                SpatieMediaLibraryFileUpload::make('logo')->collection('logos')->label('logo')->maxSize(10240)->columnSpanFull(),
+
             ]);
     }
 

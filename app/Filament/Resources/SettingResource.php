@@ -13,6 +13,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\SettingResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\SettingResource\RelationManagers;
 use Tapp\FilamentTimezoneField\Forms\Components\TimezoneSelect;
 
@@ -87,6 +89,11 @@ class SettingResource extends Resource
                 ->searchable()
                 ->label('Timezone')
                 ->required(),
+
+                SpatieMediaLibraryFileUpload::make('logo_main')->collection('logo_main')->label('Main Logo')->columnSpanFull(),
+                SpatieMediaLibraryFileUpload::make('logo_white')->collection('logo_white')->label('White Logo')->columnSpanFull(),
+                SpatieMediaLibraryFileUpload::make('logo_black')->collection('logo_black')->label('Black Logo')->columnSpanFull(),
+
             ]);
     }
 
@@ -95,6 +102,8 @@ class SettingResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
+                SpatieMediaLibraryImageColumn::make('logo_main')
+                ->collection('logo_main'),
             ])
             ->filters([
                 //

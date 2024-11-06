@@ -20,6 +20,7 @@
         <main>
             {{-- @include('section.service.info')
             @include('section.service.products') --}}
+            @include('section.contact.form')
             @include('section.home.mail')
             
         </main>

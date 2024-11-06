@@ -8,5 +8,7 @@
                 <a href="#" class="col-lg-3 mt-40"> <img src="{{$client->getMedia('logos')->first()->getUrl()}}" alt="{{ $client->name }}"> </a>
             @endforeach
         </div>
+        @include('section.about.map')
+
     </div>
 </section>
