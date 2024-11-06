@@ -123,9 +123,12 @@
   .tc-navbar .content .navbar-nav .nav-link {
     text-align: left;
     margin: 5px 0;
+    color: #fff;
     width: 100%;
   }
-
+  .tc-navbar .content .navbar-nav .nav-link .text-dark {
+    color: #fff;
+  }
  
   .tc-navbar .dropdown-menu {
     background-color: #000000;
