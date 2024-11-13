@@ -63,7 +63,7 @@
                                         <div class="accordion-body">
                                             <div class="text">
                                                 Our mission is to guarantee the growth and success of our clients by
-                                                providing exceptional soutions and unwavering su pport
+                                                providing exceptional solutions  and unwavering support
     
                                             </div>
                                         </div>
