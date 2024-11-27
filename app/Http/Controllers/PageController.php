@@ -18,8 +18,9 @@ class PageController extends Controller
         $reviews = Review::all();
         $clients = Client::all();
         // get  page
-        $page = Page::where('slug','home')->get()->first();
+        $page = Page::find(1);
         // get contents
+
         return view('index',compact('page','reviews','clients'));
 
     }
@@ -28,14 +29,14 @@ class PageController extends Controller
         $clients = Client::all();
         $branches = Branch::all();
         // get all pages
-        $page = Page::where('slug','about-us')->get()->first();
+        $page = Page::find(2);
         return view('about',compact('page','branches','clients'));
 
     }
     public function contact(){
         $branches = Branch::all();
         // get all pages
-        $page = Page::where('slug','contact-us')->get()->first();
+        $page = Page::find(3);
         return view('contact',compact('page'));
 
     }
@@ -52,11 +53,9 @@ class PageController extends Controller
 
         return redirect()->route('index');
     }
-    public function service($slug) 
+    public function service($id) 
     {
-        // get all services
-        $service = Service::with('products')->where('slug',$slug)->get()->first();
-        // get all pages
+        $service = Service::with('products')->where('id', $id)->get()->first();
         return view('service',compact('service'));
     }
 }

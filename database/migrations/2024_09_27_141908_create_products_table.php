@@ -14,14 +14,14 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->foreignId('service_id')->nullable()->references('id')->on('services')->onDelete('set null');
-            $table->string('name');
-            $table->string('subtitle');
-            $table->string('slug');
-            $table->text('details');
+            $table->json('name');
+            $table->json('subtitle');
+            $table->json('slug');
+            $table->json('details');
             $table->boolean('is_active')->default(1);
-            $table->string('title');
-            $table->string('keywords');
-            $table->text('description');
+            $table->json('title');
+            $table->json('keywords');
+            $table->json('description');
             $table->timestamps();
         });
     }

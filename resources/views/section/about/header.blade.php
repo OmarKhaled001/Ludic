@@ -1,5 +1,5 @@
 
-<section class="tc-process-style2">
+<section class="tc-process-style2" @if(app()->getLocale() == 'ar')style="direction: rtl; text-align: right;" @endif>
         <div class="container">
             <div class="content">
                 <div class="row">
@@ -12,18 +12,14 @@
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne">
                                             <span class="num"> 1 / </span>
-                                            <h3> Who We Are ? </h3>
+                                            <h3> {{ trans('main.who_we_are') }}</h3>
                                         </button>
                                     </div>
                                     <div id="collapseOne" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionProcess">
                                         <div class="accordion-body">
                                             <div class="text">
-                                                From the beginning, our goal has extended beyond sales and profits. We are committed to ongoing
-                                                development driven by specialized research, allowing us to offer the highest quality products,
-                                                competitive pricing, and reliable, timely supply. ludic's dedication to cultural responsibility
-                                                continues to evolve, as we share our expertise by providing technical information, training, and
-                                                supporting clients in growing their businesses both vertically and horizontally.
+                                                {{ trans('main.who_we_are_description') }}
                                             </div>
                                         </div>
                                     </div>
@@ -33,19 +29,14 @@
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwo" aria-expanded="false">
                                             <span class="num"> 2 / </span>
-                                            <h3>Our Vision </h3>
+                                            <h3> {{ trans('main.our_vision') }}</h3>
                                         </button>
                                     </div>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionProcess" style="">
                                         <div class="accordion-body">
                                             <div class="text">
-                                                Providing food products commensurating with our customers markets in terms
-                                                of quality prices and timely access through establishing an eVicient and
-                                                integrated import and export process in all aspects. Starting from knowing
-                                                the customers
-                                                demand, moving through each stageof the shipping process, down to after sale
-                                                services.
+                                                 {{ trans('main.our_vision_growth') }}
                                             </div>
                                         </div>
                                     </div>
@@ -55,15 +46,14 @@
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree">
                                             <span class="num"> 3 / </span>
-                                            <h3> Our Mission  </h3>
+                                            <h3>  {{ trans('main.our_mission') }}</h3>
                                         </button>
                                     </div>
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionProcess">
                                         <div class="accordion-body">
                                             <div class="text">
-                                                Our mission is to guarantee the growth and success of our clients by
-                                                providing exceptional solutions  and unwavering support
+                                               {{ trans('main.our_mission_growth') }}
     
                                             </div>
                                         </div>

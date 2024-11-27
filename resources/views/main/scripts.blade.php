@@ -1,4 +1,4 @@
-<a href="#" class="to_top show">
+<a href="#" class="to_top show "  @if(app()->getLocale() == 'ar')style="left: 25px !important; bottom: 2vw !important;" @endif>
   <i class="fal fa-angle-up"></i>
 </a>
   <!--  request  -->

@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Product extends Model implements HasMedia
 {
     use HasFactory ,InteractsWithMedia;
+    use HasTranslations;
 
     protected $table   = 'products';
 
@@ -24,6 +26,17 @@ class Product extends Model implements HasMedia
         'description',
         'keywords',
         'is_active',
+    ];
+
+    public $translatable =
+    [
+        'name',
+        'subtitle',
+        'slug',
+        'details',
+        'title',
+        'description',
+        'keywords',
     ];
 
     public $timestamps = true;

@@ -2,16 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Service extends Model implements HasMedia
 {
     use HasFactory ,InteractsWithMedia;
-    
+    use HasTranslations;
+
     protected $table   = 'services';
 
     protected $fillable =
@@ -24,6 +26,17 @@ class Service extends Model implements HasMedia
         'description',
         'keywords',
         'is_active',
+    ];
+
+    public $translatable =
+    [
+        'name',
+        'subtitle',
+        'slug',
+        'details',
+        'title',
+        'description',
+        'keywords',
     ];
 
     public $timestamps = true;

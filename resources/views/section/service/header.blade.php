@@ -1,5 +1,5 @@
 <section class="tc-main-img-style1 header"
-    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);" >
     <div class="main-img">
         <img src="{{ $service->getMedia('services')->first()->getUrl() }}" alt="{{ $service->name }}" alt=""
             class="img-cover" data-speed="1.25" data-lag="0"
@@ -15,16 +15,16 @@
         </div>
     </div>
 </section>
-<section class="tc-post-content-style1">
+<section class="tc-post-content-style1" @if(app()->getLocale() == 'ar')style="direction: rtl; text-align: right;" @endif>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="info">
                     <div class="breadcromb wow fadeInUp slow" data-wow-delay="0.2s"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <a href="#"> Home </a>
+                        <a href="#"> {{ trans('main.home') }} </a>
                         <span class="icon">/</span>
-                        <a href="#"> Products </a>
+                        <a href="#"> {{ trans('main.products') }} </a>
                         <span class="icon">/</span>
                         <a href="#"> {{ $service->name }}</a>
                     </div>
@@ -34,7 +34,7 @@
                     </h6>
 
                     <h6 class="fsz-24 fw-600 mb-30 wow fadeInUp slow" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Let's learn about
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">{{ trans('main.learn_about') }}
                         {{ $service->name }}</h6>
                     <div class="text fsz-14 color-666 mb-70 wow fadeInUp slow" data-wow-delay="0.2s"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
@@ -45,7 +45,7 @@
         </div>
         @if ($service->products->count() > 0)
         <div class="col-lg-8">
-            <h3 class="fsz-45 text-capitalize mb-50"> Products </h3>
+            <h3 class="fsz-45 text-capitalize mb-50"> {{ trans('main.products') }} </h3>
         </div>
         <div class="cases-content wow fadeInUp slow" data-wow-delay="0.4s"
         style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">

@@ -19,6 +19,7 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use App\Filament\Resources\VisitResource\Widgets\SiteVisitsWidget;
+use SolutionForest\FilamentTranslateField\FilamentTranslateFieldPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -46,6 +47,10 @@ class AdminPanelProvider extends PanelProvider
                 StatsOverviewWidget::class,
                 // Widgets\FilamentInfoWidget::class,
             ])
+            ->plugin(
+            FilamentTranslateFieldPlugin::make()
+               ->defaultLocales(['ar', 'en', 'es', 'it', 'fr', 'du']),
+            )
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,

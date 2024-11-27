@@ -1,4 +1,4 @@
-<footer class="tc-footer">
+<footer class="tc-footer"  @if(app()->getLocale() == 'ar')style="direction: rtl; text-align: right;" @endif>
     <div class="container">
         
         <div class="foot ">
@@ -10,7 +10,7 @@
                 </div> 
                 
                 <div class="col-lg-4 mt-2">
-                    <p class="copy"> © 2024  All Right Reserved </p>
+                    <p class="copy"> © 2023  {{ trans('main.all_right_reserved') }} </p>
                 </div>
                 
                 <div class="col-lg-3 mt-1">

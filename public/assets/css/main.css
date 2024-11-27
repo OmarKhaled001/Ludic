@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .tc-navbar .content .navbar-brand {
@@ -264,10 +264,14 @@
   }
 
   .tc-header-style1 .slider-card .info {
-    bottom: 60px;
-    padding: 15px;
+    bottom: 10px;
+    padding:40px 15px;
   }
 
+  .tc-header-style1 .slider-card .info h1 {
+    font-size: calc(6vw + 30px) !important;
+    font-weight: 700;
+  }
   .tc-header-style1 .swiper-pagination {
     display: none;
   }
@@ -563,16 +567,11 @@
   border-radius: 30px;
   border: 1px solid var(--border-color);
   position: absolute;
-  right: 0;
   bottom: 0;
   background: #fff;
   z-index: 10;
 }
 
-.tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-next,
-.tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-prev {
-  margin: 0;
-}
 
 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-next::after,
 .tc-testimonials-style1 .tc-clients-style1 .slider-controls .swiper-button-prev::after {
@@ -742,6 +741,7 @@
   clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
 
+
 .tc-chat-style1 .xl-text {
   font-size: 80px;
   font-weight: 500;
@@ -751,10 +751,25 @@
   color: var(--color-orange1);
   margin-bottom: 20px;
 }
+.tc-chat-style1 .lg-text {
+  font-size: 74px;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+  line-height: 1;
+  color: var(--color-orange1);
+  margin-bottom: 20px;
+  display: block;
+}
 
 @media screen and (max-width: 991px) {
   .tc-chat-style1 .xl-text {
     font-size: 35px;
+    font-weight: 700;
+  }
+
+  .tc-chat-style1 .lg-text {
+    font-size: 32px;
     font-weight: 700;
   }
 }

@@ -1,7 +1,7 @@
 <section class="tc-testimonials-style2">
     <div class="container">
         <div class="title mb-20 text-center">
-            <h2 class="fsz-45 text-light"> Our Clients </h2>
+            <h2 class="fsz-45 text-light"> {{ trans('main.our_clients') }} </h2>
         </div>
         <div class="logos row">
             @foreach ($clients as $client)

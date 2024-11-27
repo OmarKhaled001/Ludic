@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\PageResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\PageResource\RelationManagers;
+use SolutionForest\FilamentTranslateField\Forms\Component\Translate;
 
 class PageResource extends Resource
 {
@@ -31,13 +32,17 @@ class PageResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->required()
-                ->live(onBlur: true)
-                ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+
+            Translate::make()->schema([
+                TextInput::make('name')->required(),
                 TextInput::make('slug')->readOnly(),
                 TextInput::make('title')->required()->columnSpanFull(),
                 Textarea::make('description')->required()->columnSpanFull(),
                 TagsInput::make('keywords')->separator(',')->required()->columnSpanFull()
+            ])->columnSpanFull()
+            ->locales(['ar', 'en', 'es', 'it', 'fr', 'de']) // Define locales
+            ->prefixLocaleLabel(),
+            
             ]);
     }
 

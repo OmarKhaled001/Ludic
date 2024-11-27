@@ -1,8 +1,8 @@
-<section class="tc-testimonials-style1">
+<section class="tc-testimonials-style1" @if(app()->getLocale() == 'ar')style="direction: rtl; text-align: right;" @endif>
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h6 class="fsz-18 text-uppercase lh-4"> what clients say <br> about us </h6>
+                <h6 class="fsz-18 text-uppercase lh-4"> {{ trans('main.what_clients_say') }} <br> {{ trans('main.about_us') }} </h6>
                 <div class="lg-icon color-orange1"> <i class="la la-quote-right"></i> </div>
             </div>
             <div class="col-lg-8">
@@ -15,29 +15,15 @@
                                 data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 857px;">
                                 <div class="clients-card">
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “What I appreciate most about Ludic </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            is their dedication to quality </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            Their timely supply and continuous </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            support have been invaluable for us. </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            satisfied and recommended!.” </div>
+                                            “{{ trans('main.client_testimonial1') }}” 
                                     </div>
                                     <div class="author">
                                         <div class="au-img">
                                             <img src="{{ asset('assets') }}/img/team/team5.jpg" alt="" class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">Hassan Zaki</h6>
-                                            <p class="text-capitalize fsz-14 color-666">Distribution Lead</p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{ trans('main.testimonial1_author') }}</h6>
+                                            <p class="text-capitalize fsz-14 color-666">{{ trans('main.testimonial1_author_title') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -46,29 +32,15 @@
                                 aria-label="1 / 3" style="width: 857px;">
                                 <div class="clients-card">
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            “Ludic’s products have been a game-changer </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            for my business! The quality is unbeatable, </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            and their commitment to ongoing research really . </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            shines through Beyond just delivering products, </div>
-                                        <div
-                                            style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            recommended!.” </div>
+                                        “{{ trans('main.client_testimonial2') }}” 
                                     </div>
                                     <div class="author">
                                         <div class="au-img">
                                             <img src="{{ asset('assets') }}/img/team/team2.jpg" alt="" class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> M. Salah </h6>
-                                            <p class="text-capitalize fsz-14 color-666">Business Owner</p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{ trans('main.testimonial2_author') }}</h6>
+                                            <p class="text-capitalize fsz-14 color-666">{{ trans('main.testimonial2_author_title') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -77,18 +49,15 @@
                                 aria-label="2 / 3" style="width: 857px;">
                                 <div class="clients-card">
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            "Ludic's approach to continuous improvement and focus on cultural responsibility sets them apart. Their team delivers excellent </div>
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            value by offering technical insights and business support. They genuinely care about helping clients grow, both vertically and horizontally." </div>
+                                        “{{ trans('main.client_testimonial3') }}” 
                                     </div>
                                     <div class="author">
                                         <div class="au-img">
                                             <img src="{{ asset('assets') }}/img/team/team2.jpg" alt="" class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold"> David Green </h6>
-                                            <p class="text-capitalize fsz-14 color-666">Business Development </p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{ trans('main.testimonial3_author') }}</h6>
+                                            <p class="text-capitalize fsz-14 color-666">{{ trans('main.testimonial3_author_title') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,12 +66,7 @@
                                 aria-label="3 / 3" style="width: 857px;">
                                 <div class="clients-card">
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            "Ludic has consistently provided products of the highest quality while ensuring competitive pricing. Their </div>
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            expertise in research and development has made them an invaluable partner in our industry. Their timely supply </div>
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            and commitment to quality exceeded our expectations. Highly recommended for any business looking for growth." </div>
+                                        “{{ trans('main.client_testimonial5') }}” 
                                     </div>
                                     
                                     <div class="author">
@@ -110,8 +74,8 @@
                                             <img src="{{ asset('assets') }}/img/team/team3.jpg" alt="" class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">Ali Mohamed</h6>
-                                            <p class="text-capitalize fsz-14 color-666"> Director of Operations </p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{ trans('main.testimonial5_author') }}</h6>
+                                            <p class="text-capitalize fsz-14 color-666">{{ trans('main.testimonial5_author_title') }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,12 +84,8 @@
                                 data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 857px;">
                                 <div class="clients-card">
                                     <div class="text fsz-45 fw-600 lh-2 js-splittext-lines" style="perspective: 400px;">
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            "Working with Ludic has been a fantastic experience. From the start, they showed their dedication to ongoing development, </div>
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            constantly refining their products based on specialized research. Their commitment to delivering exceptional value is clear. </div>
-                                        <div style="display: block; text-align: start; position: relative; translate: none; rotate: none; scale: none; transform-origin: 428.5px 27px; transform: translate3d(0px, 0px, 0px); opacity: 1;">
-                                            They are a top-tier partner and we are thrilled with the results." </div>
+                                        “{{ trans('main.client_testimonial4') }}” 
+
                                     </div>
                                     
                                     <div class="author">
@@ -133,14 +93,14 @@
                                             <img src="{{ asset('assets') }}/img/team/team4.jpg" alt="" class="img-cover">
                                         </div>
                                         <div class="au-inf">
-                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">Omar Khaled</h6>
-                                            <p class="text-capitalize fsz-14 color-666">CEO</p>
+                                            <h6 class="text-capitalize mb-2 fsz-16 fw-bold">{{ trans('main.testimonial4_author') }}</h6>
+                                            <p class="text-capitalize fsz-14 color-666">{{ trans('main.testimonial4_author_title') }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-controls">
+                        <div class="slider-controls" @if(app()->getLocale() == 'ar')style="direction: rtl; left: 0px; "@else style="right: 0px;" @endif>
                             <div class="swiper-button-prev" tabindex="0" role="button"
                                 aria-label="Previous slide" aria-controls="swiper-wrapper-2a7f27c3a610391ea"></div>
                             <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-horizontal">
@@ -160,39 +120,39 @@
             style="transition-duration: 10000ms; transform: translate3d(-2767.29px, 0px, 0px);">
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"
                 role="group" aria-label="1 / 3" style="margin-right: 140px;">
-                <a href="#"> Creative </a>
+                <a href="#"> {{ trans('main.flexible') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1"
                 role="group" aria-label="2 / 3" style="margin-right: 140px;">
-                <a href="#"> Flexiable </a>
+                <a href="#"> {{ trans('main.fresh') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"
                 role="group" aria-label="3 / 3" style="margin-right: 140px;">
-                <a href="#"> Dedicated </a>
+                <a href="#"> {{ trans('main.flavorful') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group"
                 aria-label="1 / 3" style="margin-right: 140px;">
-                <a href="#"> Creative </a>
+                <a href="#"> {{ trans('main.flexible') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group"
                 aria-label="2 / 3" style="margin-right: 140px;">
-                <a href="#"> Flexiable </a>
+                <a href="#"> {{ trans('main.fresh') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group"
                 aria-label="3 / 3" style="margin-right: 140px;">
-                <a href="#"> Dedicated </a>
+                <a href="#"> {{ trans('main.flavorful') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0"
                 role="group" aria-label="1 / 3" style="margin-right: 140px;">
-                <a href="#"> Creative </a>
+                <a href="#"> {{ trans('main.flexible') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1"
                 role="group" aria-label="2 / 3" style="margin-right: 140px;">
-                <a href="#"> Flexiable </a>
+                <a href="#"> {{ trans('main.fresh') }} </a>
             </div>
             <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2"
                 role="group" aria-label="3 / 3" style="margin-right: 140px;">
-                <a href="#"> Dedicated </a>
+                <a href="#"> {{ trans('main.flavorful') }} </a>
             </div>
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>

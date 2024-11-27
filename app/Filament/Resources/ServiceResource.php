@@ -24,6 +24,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\ServiceResource\RelationManagers;
+use SolutionForest\FilamentTranslateField\Forms\Component\Translate;
+
 
 class ServiceResource extends Resource
 {
@@ -33,30 +35,58 @@ class ServiceResource extends Resource
     protected static ?string $navigationGroup = 'Services';
 
 
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-                Grid::make()->columns(12)->schema([
-                    Section::make([
-                        TextInput::make('slug')->readOnly(),
-                        TextInput::make('name')->required()
-                        ->live(onBlur: true)
-                        ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
-                        TextInput::make('subtitle')->label('Sub Name')->required(),
-                        Textarea::make('details')->required(),
-                        SpatieMediaLibraryFileUpload::make('service')->collection('services')->label('Cover (size : 2880*1600)')->maxSize(10240),
-                        Toggle::make('is_active')
-                    ])->columnSpan(8),
-                    Section::make('SEO')->schema([
-                        TextInput::make('title')->required(),
-                        Textarea::make('description')->required(),
-                        TagsInput::make('keywords')->separator(',')->required()
 
-                    ])->columnSpan(4),
-                ])
-            ]);
-    }
+public static function form(Form $form): Form
+{
+    return $form
+        ->schema([
+            Grid::make()->columns(12)->schema([
+                
+                Section::make('Service Details')->schema([
+                    Translate::make()
+                    ->schema([
+                            TextInput::make('slug')->readOnly(),
+                            TextInput::make('name')
+                                ->required()
+                                ->live(onBlur: true)
+                                ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                            
+                            TextInput::make('subtitle')
+                                ->label('Sub Name')
+                                ->required(),
+                            
+                            Textarea::make('details')
+                                ->required(),
+                        ])
+                        ->locales(['ar', 'en', 'es', 'it', 'fr', 'de']) 
+                        ->prefixLocaleLabel(), 
+
+                    SpatieMediaLibraryFileUpload::make('service')
+                        ->collection('services')
+                        ->label('Cover (size : 2880*1600)')
+                        ->maxSize(10240),
+                    
+                    Toggle::make('is_active')
+                ])->columnSpan(8),
+
+                Section::make('SEO')->schema([
+                    Translate::make()
+                        ->schema([
+                            TextInput::make('title')->required(),
+                            Textarea::make('description')->required(),
+                            TagsInput::make('keywords')
+                        ->separator(',')
+                        ->required()
+                        ])
+                        ->locales(['ar', 'en', 'es', 'it', 'fr', 'de']) // Define locales
+                        ->suffixLocaleLabel(), // Add suffix to fields like "Name [en]"
+
+                    
+                ])->columnSpan(4),
+            ]),
+        ]);
+}
+
 
     public static function table(Table $table): Table
     {

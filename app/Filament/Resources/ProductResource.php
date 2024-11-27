@@ -26,6 +26,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use App\Filament\Resources\ProductResource\RelationManagers;
+use SolutionForest\FilamentTranslateField\Forms\Component\Translate;
 
 class ProductResource extends Resource
 {
@@ -40,28 +41,37 @@ class ProductResource extends Resource
             ->schema([
                  Grid::make()->columns(12)->schema([
                     Section::make([
-                        Select::make('service_id')
-                        ->label('Service')
-                        ->options(Service::all()->pluck('name', 'id'))
-                        ->preload()
-                        ->required()
-                        ->searchable(),
-                        
-                        TextInput::make('name')->required()
-                        ->live(onBlur: true)
-                        ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
-                        TextInput::make('slug')->readOnly(),
-                        TextInput::make('subtitle')->label('Sub Name')->required(),
-                        Textarea::make('details')->required(),
+                        Translate::make()
+                        ->schema([
+                            Select::make('service_id')
+                            ->label('Service')
+                            ->options(Service::all()->pluck('name', 'id'))
+                            ->preload()
+                            ->required()
+                            ->searchable(),
+                            
+                            TextInput::make('name')->required()
+                            ->live(onBlur: true)
+                            ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                            TextInput::make('slug')->readOnly(),
+                            TextInput::make('subtitle')->label('Sub Name')->required(),
+                            Textarea::make('details')->required(),
+                            ])
+                            ->locales(['ar', 'en', 'es', 'it', 'fr', 'de']) 
+                            ->prefixLocaleLabel(), 
                         SpatieMediaLibraryFileUpload::make('product')->collection('products')->label('Cover (size : 800*800)')->maxSize(10240),
                         // SpatieMediaLibraryFileUpload::make('image_product')->collection('images_products')->label('Cover (size : 800*800)')->maxSize(10240),
                         Toggle::make('is_active')
                     ])->columnSpan(8),
                     Section::make('SEO')->schema([
+                        Translate::make()
+                        ->schema([
                         TextInput::make('title')->required(),
                         Textarea::make('description')->required(),
                         TagsInput::make('keywords')->separator(',')->required()
-
+                        ])
+                        ->locales(['ar', 'en', 'es', 'it', 'fr', 'de']) // Define locales
+                        ->suffixLocaleLabel(), // Add suffix to fields like "Name [en]"
                     ])->columnSpan(4),
                 ])
             ]);

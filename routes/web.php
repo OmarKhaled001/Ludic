@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::group([
+	'prefix' => LaravelLocalization::setLocale(),
+	'middleware' => [ 'localeSessionRedirect', 'localizationRedirect','localeViewPath' ]
+], function()
+{
 Route::get('/',               [PageController::class,'index'])        ->name('index');
 Route::get('/about',          [PageController::class,'about'])        ->name('about');
 Route::get('/service/{slug}', [PageController::class,'service'])      ->name('service');
 Route::get('/contact',        [PageController::class,'contact'])      ->name('contact');
 Route::post('/contact',       [PageController::class,'contactForm'])  ->name('contact');
+
+});
+
 
